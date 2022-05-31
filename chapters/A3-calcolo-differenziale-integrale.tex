@@ -1,0 +1,123 @@
+%!TEX root = ../main.tex
+\chapter{Calcolo differenziale ed integrale}
+
+\section{Regole di derivazione di una funzione}
+
+\subsection*{Regole generali}
+
+Sia $\displaystyle k$ una costante ed $\displaystyle f( x)$, $\displaystyle g( x)$ due funzioni continue e derivabili (per la nozione di derivabilità si rimanda ad un testo di Analisi Matematica). Indicando con $\displaystyle f'( x) =\frac{df}{dx}$ e $\displaystyle g'( x) =\frac{dg}{dx}$ le derivate prime di $\displaystyle f( x)$ e $\displaystyle g( x)$, si hanno le seguenti relazioni
+
+\begin{equation*}
+	\begin{array}{ c }
+		\frac{d}{dx}[ k\ f( x)] =k\ f'( x)\\
+		[4mm]
+		\frac{d}{dx}[ g( x) +f( x)] =g'( x) +f'( x)\\
+		[4mm]
+		\frac{d}{dx}[ g( x) \cdot f( x)] =g'( x) f( x) +g( x) f( x) '\\
+		[4mm]
+		\frac{d}{dx}\left[\frac{g( x)}{f( x)}\right] =\frac{g'( x) f( x) -g( x) f( x) '}{f^2( x)}
+	\end{array}
+\end{equation*}
+
+Se $\displaystyle g=g( z)$ e $\displaystyle z=f( x)$, la funzione $\displaystyle g=g[ f( x)]$ si dice composita. In tal caso la derivata di $\displaystyle g( x)$ risulta
+
+\begin{equation*}
+	\frac{d}{dx} g( z) =\frac{dg}{dz} \cdot \frac{dz}{dx} =\frac{dg}{dz} \cdot \frac{df}{dx}
+\end{equation*}
+
+\subsection*{Tabella delle principali derivate}
+
+\begin{equation*}
+	\begin{array}{ l l }
+		\frac{d}{dx} k=0 & \frac{d}{dx} x^n =n\ x^{n-1}\\
+		[4mm]
+		\frac{d}{dx} e^{kx} =k\ e^{kx} & \frac{d}{dx} a^{kx} =k\ a^{kx}\ln a\\
+		[4mm]
+		\frac{d}{dx}\sin x=\cos x & \frac{d}{dx}\cos x=-\sin x\\
+		[4mm]
+		\frac{d}{dx}\tan x=\frac{1}{\cos^2 x} \ \ \ \  & \frac{d}{dx}\cot x=-\frac{1}{\sin^2 x}\\
+		[4mm]
+		\frac{d}{dx}\ln x=\frac{1}{x} & \frac{d}{dx}\ln[ f( x)] =\frac{f'( x)}{f( x)}
+	\end{array}
+\end{equation*}
+
+\section{Regole di integrazione di una funzione}
+
+\subsection*{Regole generali}
+
+Date due funzioni $\displaystyle f( x)$ ed $\displaystyle F( x)$, diremo che $\displaystyle F$ è una primitiva di $\displaystyle f$ se:
+
+\begin{equation*}
+	\frac{d}{dx} F(x) =f(x)
+\end{equation*}
+
+La primitiva di una funzione viene anche detta integrale indefinito ed indicata con la notazione:
+
+\begin{equation*}
+	F(x) =\int f(x) \ dx
+\end{equation*}
+
+In virtù delle regole di derivazione, la primitiva è sempre definita a meno di una costante arbitraria. Per il teorema del calcolo integrale, l'integrale definito di una funzione $\displaystyle f( x)$ valutato fra gli estremi $\displaystyle a$ e $\displaystyle b$ risulta pari alla differenza dei valori assunti dalla primitiva nei due estremi:
+
+\begin{equation*}
+	\int^b_a f( x) \ dx\ =[ F( x)]^b_a =F( b) -F( a)
+\end{equation*}
+
+Vi sono due metodi importanti di risoluzione di un integrale definito:
+
+\begin{enumerate}
+	\item \textit{Integrazione per sostituzione}. Posto $\displaystyle x=y( t)$ e detta $\displaystyle t=g( x)$ la sua funzione inversa, risulta:
+	\[
+		\int^b_a f( x) \ dx=\int^{g( b)}_{g( a)} f[ y( t)]\frac{dy}{dt} dt
+	\]
+	\item \textit{Integrazione per parti}. Se in un integrale appare il prodotto di una funzione $\displaystyle f( x)$ per la derivata di una funzione $\displaystyle g( x)$, possiamo allora porre:
+	\[
+		\int^b_a f( x)\frac{dg}{dx} dx=[ f( x) \ g( x)]^b_a -\int^b_a\frac{df}{dx} g( x) \ dx
+	\]
+\end{enumerate}
+
+\subsection*{Tabella dei principali integrali indefiniti}
+
+Si noti che tutti gli integrali qui riportati sono sempre assegnati a meno di una costante arbitraria $\displaystyle C$.
+
+\begin{equation*}
+	\begin{array}{ l l }
+		\int k\ dx=kx & \int x^n \ dx=\frac{x^{n+1}}{n+1}\\
+		[4mm]
+		\int e^{kx} \ dx=\frac{e^{kx}}{k} & \int a^{kx} \ dx=\frac{a^{kx}}{k\ln a}\\
+		[4mm]
+		\int \sin x\ dx=-\cos x & \int \cos x\ dx=\sin x\\
+		[4mm]
+		\int \tan x\ dx=-\ln(\cos x) \ \ \ \  & \int \cot x\ dx=\ln(\sin x)\\
+		[4mm]
+		\int \frac{1}{x} \ dx=\ln x & \int \ln x\ dx=x\ln x-x
+	\end{array}
+\end{equation*}
+
+\section{Espansione in serie di una funzione}
+
+Si consideri una funzione $\displaystyle f( x)$ continua assieme alle sue derivate in un intorno del punto $\displaystyle x_0 ;\ f( x)$ può essere rappresentata in tale intorno mediante una serie di potenze di $\displaystyle x$:
+
+\begin{equation*}
+	f( x) =\sum^{\infty }_{n=0}\frac{1}{n!}\frac{d^n f}{dx^n}( x_0)( x-x_0)^n
+\end{equation*}
+
+dove $\displaystyle n!=n\cdot ( n-1) \cdot ( n-2) ...3\cdot 2\cdot 1;\ 0!=1$ e le derivate di ordine $\displaystyle n$-esimo della funzione $\displaystyle f( x)$ sono tutte valutate nel punto $\displaystyle x_0$. Se la precedente sommatoria viene arrestata ai primi addendi, si ottiene una espressione che approssima la funzione $\displaystyle f( x)$. Di seguito si riportano le approssimazioni di alcune funzioni in un intorno di $\displaystyle x_0 =0$.
+
+\subsection*{Approssimazione di $\displaystyle f( x)$ nell'intorno di $\displaystyle x_0 =0$}
+
+\begin{equation*}
+	\begin{array}{ l l }
+		\sin x\approx x & \cos x\approx 1-\frac{x^2}{2}\\
+		[4mm]
+		e^x \approx 1+x & \tan x\approx x\\
+		[4mm]
+		\frac{1}{1+x} \approx 1-x & \frac{1}{1-x} \approx 1+x\\
+		[4mm]
+		( 1+x)^2 \approx 1+2x\ \ \ \  & ( 1-x)^2 \approx 1-2x\\
+		[4mm]
+		\sqrt{1+x} \approx 1+\frac{x}{2} & \sqrt{1-x} \approx 1-\frac{x}{2}\\
+		[4mm]
+		\ln( 1+x) \approx x &
+	\end{array}
+\end{equation*}

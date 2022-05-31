@@ -1,0 +1,83 @@
+%!TEX root = ../main.tex
+\chapter{Identità vettoriali}
+
+Si indicherà col simbolo $\mathbf{A}$ il vettore $\vec{A}$ per non appesantire la notazione. Si utilizzerà il simbolo $\nabla$ per indicare la divergenza ($\nabla\cdot\mathbf{A}$), il rotore ($\nabla\times\mathbf{A}$) di un campo vettoriale $\mathbf{A}$ e il gradiente ($\nabla f$) di un campo scalare $f$.
+
+\section{Identità vettoriali generiche}
+
+\textbf{Triplo prodotto}
+
+\begin{align*}
+	&\mathbf{A} \times (\mathbf{B} \times \mathbf{C}) = \mathbf{B} (\mathbf{A} \cdot \mathbf{C}) - \mathbf{C} (\mathbf{A} \cdot \mathbf{B}) \\
+	&\mathbf{A} \cdot (\mathbf{B} \times \mathbf{C}) = \mathbf{B} \cdot (\mathbf{C} \times \mathbf{A}) = \mathbf{C} \cdot (\mathbf{A} \times \mathbf{B})
+\end{align*}
+
+da cui si ha
+
+\begin{align*}
+	(\mathbf{A} \times \mathbf{B}) \cdot (\mathbf{C} \times \mathbf{D}) = (\mathbf{A} \cdot \mathbf{C}) (\mathbf{B} \cdot \mathbf{D}) - (\mathbf{A} \cdot \mathbf{D}) (\mathbf{B} \cdot \mathbf{C})
+\end{align*}
+
+ed in particolare
+
+\begin{align*}
+	|\mathbf{A} \times \mathbf{B}|^2 = |\mathbf{A}|^2 |\mathbf{B}|^2 - (\mathbf{A} \cdot \mathbf{B})^2
+\end{align*}
+
+\section{Proprietà degli operatori vettoriali}
+
+\textbf{Proprietà distributiva}
+
+\begin{align*}
+	& \nabla (f+g) = \nabla f + \nabla g \\
+	& \nabla \cdot ( \mathbf{A} + \mathbf{B} ) = \nabla \cdot \mathbf{A} + \nabla \cdot \mathbf{B} \\
+	& \nabla \times ( \mathbf{A} + \mathbf{B} ) = \nabla \times \mathbf{A} + \nabla \times \mathbf{B}
+\end{align*}
+\textbf{Proprietà del prodotto scalare}
+
+\begin{align*}
+	&\nabla(\mathbf{A} \cdot \mathbf{B}) = (\mathbf{A} \cdot \nabla)\mathbf{B} + (\mathbf{B} \cdot \nabla)\mathbf{A} + \mathbf{A} \times (\nabla \times \mathbf{B}) + \mathbf{B} \times (\nabla \times \mathbf{A})
+\end{align*}
+\textbf{Proprietà del prodotto vettoriale}
+
+\begin{align*}
+	&\nabla \cdot (\mathbf{A} \times \mathbf{B}) = \mathbf{B} \cdot \nabla \times \mathbf{A} - \mathbf{A} \cdot \nabla \times \mathbf{B} \\
+	&\nabla \times (\mathbf{A} \times \mathbf{B}) = \mathbf{A} (\nabla \cdot \mathbf{B}) -\mathbf{B}  (\nabla \cdot \mathbf{A})+( \mathbf{B}\cdot \nabla)\mathbf{A}-( \mathbf{A}\cdot \nabla)\mathbf{B}
+\end{align*}
+\textbf{Prodotto tra scalari e vettori}
+
+\begin{align*}
+	&\nabla (fg) = f \nabla g + g \nabla f \\
+	&\nabla \cdot (f\mathbf{A}) = \nabla f \cdot \mathbf{A} + f \nabla \cdot \mathbf{A}\\
+	&\nabla \times (f \mathbf{A}) = \nabla f \times \mathbf{A} + f \nabla \times \mathbf{A}
+\end{align*}
+
+\section{Combinazione di operatori vettoriali}
+
+\textbf{Divergenza del gradiente}
+
+\begin{align*}
+	\nabla \cdot \nabla f = \nabla^2 f   = \sum_{i=1}^n \frac {\partial^2f}{\partial x^2_i}
+\end{align*}
+
+L'operatore $ \nabla^2$ viene detto operatore di Laplace (o laplaciano) e viene anche indicato con $ \Delta $. \\\\
+\textbf{Rotore del gradiente}
+
+\begin{align*}
+	\nabla \times \nabla f = 0
+\end{align*}
+\textbf{Divergenza del rotore}
+
+\begin{align*}
+	\nabla \cdot \nabla \times \mathbf{A} = 0
+\end{align*}
+\textbf{Rotore del rotore}
+
+\begin{align*}
+	\nabla \times \left( \mathbf{\nabla \times F} \right) = \mathbf{\nabla} (\mathbf{\nabla \cdot F}) - \nabla^2 \mathbf{F}
+\end{align*}
+\textbf{Altre identità}
+
+\begin{align*}
+	\frac{1}{2} \nabla \mathbf{A}^2 = \mathbf{A} \times (\nabla \times \mathbf{A}) + (\mathbf{A} \cdot \nabla) \mathbf{A}
+\end{align*}
