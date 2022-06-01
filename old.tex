@@ -1,0 +1,154 @@
+\usepackage{amsfonts}
+\usepackage[none]{hyphenat} % PER NON FAR ANDARE A CAPO LE PAROLE CON IL TRATTINO
+\usepackage[nottoc,notlot,notlof]{tocbibind} % boh
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{centernot} % serve per il 'A NON implica B' nel comando \centernot
+\usepackage{wrapfig}
+\pdfsuppresswarningpagegroup=1
+
+% FIGURE MATHCHA.IO
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{caption}\captionsetup{belowskip=12pt,aboveskip=4pt}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usepackage{placeins} % The placeins package gives the command \FloatBarrier, which will make sure any floats will be put in before this point
+\usepackage{flafter}  % The flafter package ensures that floats don't appear until after they appear in the code.
+
+% PER INCLUDERE FIGURE
+\usepackage{import}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage{xcolor}
+
+% QUESTO NUOVO COMANDO SERVE PER INCLDERE LE FIGURE FATTE IN INKSCAPE, CHE SI DEVONO TROVARE NELLA STESSA DIRECTORY DENTRO LA CARTELLA figures
+\newcommand{\incfig}[2][1]{%
+	\def\svgwidth{#1\columnwidth}
+	\import{./figures/}{#2.pdf_tex}
+}
+
+% RISCRITTURA DI COMANDI
+%\renewcommand{\epsilon}{\varepsilon} % NON USATO
+%\renewcommand{\theta}{\vartheta} % NON USATO
+%\renewcommand{\rho}{\varrho}
+%\renewcommand{\phi}{\varphi} % NON USATO
+\renewcommand{\degree}{^\circ\text{C}} % SIMBOLO GRADI
+\newcommand{\notimplies}{\mathrel{{\ooalign{\hidewidth$\not\phantom{=}$\hidewidth\cr$\implies$}}}}
+
+\usepackage{mathtools} % SERVE PER I DUE COMANDI DOPO
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert} % CREA UN COMANDO abs()
+\DeclarePairedDelimiter{\norma}{\lVert}{\rVert} % CREA UN COMANDO norma()
+
+% INDICE
+\setcounter{secnumdepth}{3} % DI DEFAULT LE SUBSUBSECTION NON SONO NUMERATE, COSÌ SÌ
+\setcounter{tocdepth}{1} % FISSA LA PROFONDITÀ DELLE COSE MOSTRATE NELL'INDICE
+%\usepackage{tocstyle}
+%\usetocstyle{standard}
+\usepackage[hidelinks]{hyperref} % RENDE L'INDICE INTERATTIVO E hidelinks NASCONDE IL BORDO ROSSO DAI RIFERIMENTI
+
+% APPENDICI
+\usepackage[toc,page]{appendix}
+\newcommand{\nocontentsline}[3]{} % QUESTO COMANDO E QUELLO DOPO SERVONO PER AVERE IL COMANDO \tocless DA METTERE PRIMA DI UNA SEZIONE CHE NON VOGLIO FAR APPARIRE NELL'INDICE
+\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
+
+% FONT
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{latexsym}
+\usepackage{textcomp}
+\usepackage{siunitx}
+
+% SCRITTA LaTeX
+\newcommand{\latex}{\LaTeX\xspace}
+\newcommand{\tex}{\TeX\xspace}
+
+% PARAGRAFI, INTERLINEA E MARGINE
+\emergencystretch 3em % PER EVITARE CHE IL TESTO VADA OLTRE I MARGINI
+\parindent 0ex % TOGLIE INTENDAMENTO PARAGRAFI
+% \setlength{\parindent}{4em} % CAMBIA INDENTAMENTO PARAGRAFI
+\setlength{\parskip}{\baselineskip} % CAMBIA SPAZIO TRA PARAGRAFI (POSSO METTERE ANCHE 1em)
+% \renewcommand{\baselinestretch}{1.5} % CAMBIA INTERLINEA
+% \usepackage[margin=1in]{geometry} % CAMBIA MARGINE DEL DOCUMENTO
+
+% HEADER
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{} % PULISCI HEADER
+\fancyfoot{} % PULISCI FOOTER
+
+% TOGLI I PROSISMI DUE COMMENTI PER CAMBIARE DA 'Capitolo X. Blabla' A 'X. Blabla'
+%\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\fancyhead[RE]{\nouppercase{\leftmark}} %\fancyhead[RE]{\thechapter.  \leftmark}
+\fancyhead[LO]{\nouppercase{\rightmark}}
+\fancyhead[LE,RO]{\thepage}
+
+%\fancyhead[L]{\slshape \MakeUppercase{FISICA SPERIMENTALE 2}}
+%\fancyhead[R]{\slshape A cura di Teo Bucci e Giulia Di Giusto}
+%\fancyfoot[C]{\thepage}
+%\renewcommand{\headrulewidth}{0pt} % CANCELLA LINEA ORIZZONTALE HEAD
+
+% CENTRARE VERTICALMENTE IL TITOLO DELLA PAGINA PRINCIPALE
+\usepackage{titling}
+\renewcommand\maketitlehooka{\null\mbox{}\vfill}
+\renewcommand\maketitlehookd{\vfill\null}
+
+% BOX DI VARIO TIPO
+
+% TEOREMA TIPO 1
+\usepackage{mdframed}
+\newmdtheoremenv{mdtheo}{Teorema}
+
+% BOX DEFINIZIONI/FORMULE IMPORANTI/TEOREMA TIPO 2
+\usepackage{tcolorbox}
+\usepackage{blindtext}
+\usepackage{tikz,tkz-tab,amsmath}
+\tcbuselibrary{theorems}
+
+% FORMULE
+%\newtcolorbox{formula}{
+%	colback=red!5!white,
+%	colframe=red!75!black
+%	}
+\newtcolorbox{formula}{
+	colback=black!5!white,
+	colframe=black
+	}
+
+% TEOREMA TIPO 2
+\newtcbtheorem
+	[number within=section]
+	{theo}
+	{Teorema}
+	{
+		colback=green!5,
+		colframe=green!35!black,
+		fonttitle=\bfseries,
+		separator sign none % toglie i :
+	}
+	{th}
+
+% DEFINIZIONI
+\newtcbtheorem
+	[number within=section] % init options
+	{definition} % nome da scrivere in LaTeX
+	{Definizione}% Titolo che verrà visualizzazione
+	{
+		colback=blue!5,
+		colframe=blue!45!black,
+		fonttitle=\bfseries,
+	} % options
+	{def} % PREFISSO/LABEL PER LE REF

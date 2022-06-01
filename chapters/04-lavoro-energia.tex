@@ -49,7 +49,7 @@ Visto che si parla di uno spostamento infinitesimo, la quantità di lavoro che s
 Ci si accorge che, andando a risolvere il prodotto scalare, esso vale:
 
 \[
-	\norma{\vec{F}}\norma{d\vec{r}}\cos\vartheta
+	\norm{\vec{F}}\norm{d\vec{r}}\cos\vartheta
 \]
 
 Si possono presentare tre casi:
@@ -61,7 +61,7 @@ Si possono presentare tre casi:
 \end{itemize}
 
 Lungo un arco finito di traiettoria può presentarsi sempre la stessa situazione, così che la velocità finale è maggiore di quella iniziale nel primo caso, minore nel secondo, uguale nel terzo. Tuttavia le varie situazioni possono anche alternarsi e il risultato dipende dalla situazione predominante.
-Si noti che $\norma{\vec{F}} \cos\vartheta$ non è altro che la proiezione di $\vec{F}$ in direzione tangente al moto a conferma del fatto che una forza compie lavoro solo se presenta tale componente.
+Si noti che $\norm{\vec{F}} \cos\vartheta$ non è altro che la proiezione di $\vec{F}$ in direzione tangente al moto a conferma del fatto che una forza compie lavoro solo se presenta tale componente.
 
 Si è definito il lavoro elementare considerando un tratto molto piccolo di traiettoria. Se la si divide in tanti segmenti infinitesimi, il lavoro totale, complessivo, fatto dalla forza $\vec{F}$ quando il punto materiale si muove sulla traiettoria $\Gamma$ dalla posizione $A$ alla posizione $B$, è la somma di tutti i lavori elementari calcolati su ogni segmento infinitesimo. Essendo una somma continua, si trova un integrale di linea:
 
@@ -328,13 +328,13 @@ La forza di attrito radente statico non compie lavoro perché, come già ribadit
 Scomponendo le forze in componenti intrinseche alla traiettoria:
 
 \[
-	\vec{F}_{\text{attr}}=-\mu_d\norma{\vec{R}_n} \vec{u}_t \quad d\vec{r}=ds\vec{u}_t
+	\vec{F}_{\text{attr}}=-\mu_d\norm{\vec{R}_n} \vec{u}_t \quad d\vec{r}=ds\vec{u}_t
 \]
 
 Supponendo che il punto si muova sullo stesso piano, $R_n$ è costante.
 
 \[
-	\boxed{\mathcal{L}_{\Gamma, A \to B}=\int_A^B -\mu_d\norma{\vec{R}_n} \,ds=-\mu_d\norma{\vec{R}_n}L_\Gamma}
+	\boxed{\mathcal{L}_{\Gamma, A \to B}=\int_A^B -\mu_d\norm{\vec{R}_n} \,ds=-\mu_d\norm{\vec{R}_n}L_\Gamma}
 \]
 
 \begin{figure}[htpb]
@@ -622,7 +622,7 @@ In presenza di forze non conservative l'energia meccanica non resta costante e l
 \FloatBarrier
 
 \begin{align*}
-	\mathcal{L}_{\text{F.N.C.}_{\Gamma, A \to B}} &= \vec{F}_{\text{attr}} \cdot d\vec{r}= \norma{\vec{F}_{\text{attr}}}L \tag*{$L=\frac{h}{\sin\vartheta}$} \\
+	\mathcal{L}_{\text{F.N.C.}_{\Gamma, A \to B}} &= \vec{F}_{\text{attr}} \cdot d\vec{r}= \norm{\vec{F}_{\text{attr}}}L \tag*{$L=\frac{h}{\sin\vartheta}$} \\
 	&= mg\cos\vartheta \mu_d \frac{h}{\sin\vartheta}=\cot\vartheta \,mgh\, \mu_d
 \end{align*}
 

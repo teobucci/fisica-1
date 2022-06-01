@@ -29,7 +29,7 @@
 \usepackage{multirow}
 \usepackage{makecell}
 \usepackage{tabularx}
-%\usepackage{booktabs}
+\usepackage{booktabs}
 \usepackage{caption}\captionsetup{belowskip=12pt,aboveskip=4pt}
 \usepackage{subcaption}
 \usetikzlibrary{fadings}
@@ -83,14 +83,21 @@
 
 \usepackage{fancyhdr}
 
-\pagestyle{empty} % Il fancy serve a partire al primo capitolo
-\fancyhead{} % Pulisci header
-\fancyfoot{} % Pulisci footer
+\fancypagestyle{toc}{%
+\fancyhf{}%
+\fancyfoot[C]{\thepage}%
+\renewcommand{\headrulewidth}{0pt}%
+\renewcommand{\footrulewidth}{0pt}
+}
 
-\fancyhead[RE]{\nouppercase{\leftmark}}
-%\fancyhead[LO]{}
-\fancyhead[LO]{\nouppercase{\rightmark}}
-\fancyhead[LE,RO]{\thepage}
+\fancypagestyle{fancy}{%
+\fancyhf{}%
+\fancyhead[RE]{\nouppercase{\leftmark}}%
+\fancyhead[LO]{\nouppercase{\rightmark}}%
+\fancyhead[LE,RO]{\thepage}%
+\renewcommand{\footrulewidth}{0pt}%
+\renewcommand{\headrulewidth}{0.4pt}
+}
 
 % Removes the header from odd empty pages at the end of chapters
 \makeatletter
@@ -107,28 +114,30 @@
 %----------------------------------------------------------------------------------------
 
 \newcommand{\Tau}{\mathcal{T}}
-\newcommand{\myNewEmptyPage}{\newpage $ $}
 \DeclareMathOperator{\sgn}{sgn}
 \newcommand{\degree}{^\circ\text{C}} % SIMBOLO GRADI
 \newcommand{\notimplies}{\mathrel{{\ooalign{\hidewidth$\not\phantom{=}$\hidewidth\cr$\implies$}}}}
 \renewcommand{\qed}{\tag*{$\blacksquare$}}
+
+\usepackage{xspace}
 \newcommand{\latex}{\LaTeX\xspace}
 \newcommand{\tex}{\TeX\xspace}
+
 \newcommand{\questeq}{\overset{?}{=}} % è vero che?
 \newcommand{\complementary}{^{\mathrm{C}}}
 \renewcommand{\emptyset}{\varnothing} % simbolo insieme vuoto
 \newcommand{\Bot}{\perp \!\!\! \perp} % indipendenza
 
 \usepackage{mathtools} % Serve per i due comandi dopo
-\DeclarePairedDelimiter{\abs}{\left\lvert}{\right\rvert}
-\DeclarePairedDelimiter{\norm}{\left\lVert}{\right\rVert}
-\DeclarePairedDelimiter{\sca}{\left\langle}{\right\rangle}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+\DeclarePairedDelimiter{\sca}{\langle}{\rangle}
 
 %----------------------------------------------------------------------------------------
 %	APPENDICE
 %----------------------------------------------------------------------------------------
 
-\usepackage[toc,page]{appendix}
+\usepackage[title,titletoc]{appendix}
 
 %----------------------------------------------------------------------------------------
 %	SIMBOLI CARTE DA GIOCO
@@ -151,27 +160,27 @@
 \newtheoremstyle{blacknumbox} % Theorem style name
 {0pt}% Space above
 {0pt}% Space below
-{\normalfont}% Body font
+{\normlfont}% Body font
 {}% Indent amount
 {\bf\scshape}% Theorem head font --- {\small\bf}
 {.\;}% Punctuation after theorem head
 {0.25em}% Space after theorem head
 {\small\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
 %{\small\thmname{#1}% Theorem text (e.g. Theorem)
-\thmnote{\nobreakspace\the\thm@notefont\normalfont\bfseries---\nobreakspace#3}}% Optional theorem note
+\thmnote{\nobreakspace\the\thm@notefont\normlfont\bfseries---\nobreakspace#3}}% Optional theorem note
 
 % Per gli unnumbered tolgo il \nobreakspace subito dopo {\small\thmname{#1} perché altrimenti c'è uno spazio tra Teorema e il ".", lo spazio lo voglio solo se sono numerati per distanziare Teorema e "(2.1)"
 \newtheoremstyle{unnumbered} % Theorem style name
 {0pt}% Space above
 {0pt}% Space below
-{\normalfont}% Body font
+{\normlfont}% Body font
 {}% Indent amount
 {\bf\scshape}% Theorem head font --- {\small\bf}
 {.\;}% Punctuation after theorem head
 {0.25em}% Space after theorem head
 {\small\thmname{#1}\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
 %{\small\thmname{#1}% Theorem text (e.g. Theorem)
-\thmnote{\nobreakspace\the\thm@notefont\normalfont\bfseries---\nobreakspace#3}}% Optional theorem note
+\thmnote{\nobreakspace\the\thm@notefont\normlfont\bfseries---\nobreakspace#3}}% Optional theorem note
 
 \newcounter{dummy} 
 \numberwithin{dummy}{chapter}
@@ -268,7 +277,20 @@ innerbottommargin=5pt]{dimBox}
 \setcounter{secnumdepth}{3} % DI DEFAULT LE SUBSUBSECTION NON SONO NUMERATE, COSÌ SÌ
 \setcounter{tocdepth}{2} % FISSA LA PROFONDITÀ DELLE COSE MOSTRATE NELL'INDICE
 
-\usepackage[hidelinks]{hyperref} % Rende l'indice interattivo e hidelinks nasconde il bordo rosso dai riferimenti
+%\usepackage[hidelinks,bookmarksnumbered]{hyperref} % Rende l'indice interattivo e hidelinks nasconde il bordo rosso dai riferimenti
+
+\usepackage{bookmark}% loads hyperref too
+    \hypersetup{
+        %pdftitle={Fundamentos de C\'alculo},
+        %pdfsubject={C\'alculo diferencial},
+        bookmarksnumbered=true,
+        bookmarksopen=true,
+        bookmarksopenlevel=1,
+        hidelinks,% remove border and color
+        pdfstartview=Fit, % Fits the page to the window.
+        pdfpagemode=UseOutlines, %Determines how the file is opening in Acrobat; the possibilities are UseNone, UseThumbs (show thumbnails), UseOutlines (show bookmarks), FullScreen, UseOC (PDF 1.5), and UseAttachments (PDF 1.6). If no mode if explicitly chosen, but the bookmarks option is set, UseOutlines is used.
+    }
+
 
 % Questo comando e quello dopo servono per avere il comando \tocless da mettere prima di una sezione che non voglio far apparire nell'indice
 \newcommand{\nocontentsline}[3]{}

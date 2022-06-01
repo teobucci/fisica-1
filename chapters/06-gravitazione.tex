@@ -135,7 +135,7 @@ Questa proporzionalità è la stessa per tutti i pianeti del sistema solare. La 
 Fu poi Newton a dare una interpretazione metodologica, basata su un concetto fisico, di queste tre osservazioni sperimentali attuate da Keplero. Se esse infatti danno una descrizione cinematica del moto dei pianeti, la spiegazione dinamica venne trovata proprio da Newton nel 1666. Affinché le tre leggi siano vere, il corpo non può che essere soggetto a un'unica forza detta di gravitazione universale. Essa è tale per cui, detta $r$ la mutua distanza fra i centri dei pianeti,  è inversamente proporzionale al quadrato di $r$ e direttamente proporzionale al prodotto fra le masse, tramite una costante di proporzionalità. Immaginando che la massa $M$ sia il Sole e la $m$ sia il pianeta, si ha:
 
 \[
-	\norma{\vec{F}_\gamma}=\frac{mM}{r^2}\gamma \qquad \text{con} \quad\gamma=6.67 \cdot 10^{-11} m^3 kg^{-1} s^{-2}
+	\norm{\vec{F}_\gamma}=\frac{mM}{r^2}\gamma \qquad \text{con} \quad\gamma=6.67 \cdot 10^{-11} m^3 kg^{-1} s^{-2}
 \]
 
 Fu poi Cavendish a capire che doveva trattarsi di una forza attrattiva fra due corpi.
@@ -300,12 +300,12 @@ Si consideri un oggetto che si muove su una traiettoria con momento angolare cos
 \paragraph{2} Si calcoli ora il modulo del momento angolare:
 
 \[
-	\norma{\vec{L}}=\norma{\vec{r}\times m\vec{v}}=\norma{\vec{r}\times m(\vec{v}_r+\vec{v}_\vartheta)}=\norma{\vec{r}\times m \vec{v}_\vartheta}
+	\norm{\vec{L}}=\norm{\vec{r}\times m\vec{v}}=\norm{\vec{r}\times m(\vec{v}_r+\vec{v}_\vartheta)}=\norm{\vec{r}\times m \vec{v}_\vartheta}
 \]
 $\vec{r}$ e $\vec{v}_\vartheta$ sono ortogonali quindi il prodotto vettoriale fra di essi non è altro che il prodotto fra i loro moduli.
 
 \[
-	\norma{\vec{L}}=\norma{\vec{r}} \cdot \norma{\vec{v}_\vartheta} m=r^2\omega m=m\,r^2\,\frac{d\vartheta}{dt}=\text{costante}
+	\norm{\vec{L}}=\norm{\vec{r}} \cdot \norm{\vec{v}_\vartheta} m=r^2\omega m=m\,r^2\,\frac{d\vartheta}{dt}=\text{costante}
 \]
 
 Si immagini che il punto si stia muovendo di un piccolo tratto infinitesimo:  la sua posizione angolare varia di $d\vartheta$. Si definisce \textbf{velocità areale} o areoale, $\frac{dA}{dt}$, la quantità scalare pari alla variazione nel tempo dell'area spaziata dal raggio vettore. Si procede approssimando l'area tratteggiata all'area di un triangolo.
@@ -376,7 +376,7 @@ L'altezza è proprio la distanza radiale, la base $r\,d\vartheta$ è l'arco di c
 Quindi:
 
 \[
-	v_\text{areale}=\frac{\norma{\vec{L}}}{2m}
+	v_\text{areale}=\frac{\norm{\vec{L}}}{2m}
 \]
 
 Se il momento angolare è costante si ha che la velocità areale è costante. Trovare un moto in cui i momenti delle forze sono nulli e quindi il momento angolare è costante, vuole dire avere una traiettoria piana con velocità areale costante. Viene così verificata la seconda legge di Keplero.
@@ -431,7 +431,7 @@ Da questa espressione si vede che $r$ costante e velocità areale costante impli
 In questo particolare caso si ha:
 
 \[
-	\norma{\vec{F}_\gamma}=\gamma \frac{mM}{r^2}=m\omega^2r
+	\norm{\vec{F}_\gamma}=\gamma \frac{mM}{r^2}=m\omega^2r
 \]
 
 \paragraph{3} La terza legge di Keplero si dimostra qui nel caso di orbite circolari. Le orbite dei pianeti, pur essendo certamente ellittiche, sono molto prossime a circonferenze. Se la velocità areale è costante, il moto di un pianeta è circolare uniforme. Il periodo di rivoluzione, ossia il tempo per compiere un giro completo, è dato da:
@@ -551,7 +551,7 @@ Siccome la forza è conservativa, l'energia meccanica, somma dell'energia cineti
 Riscrivendo l'energia cinetica nelle sue componenti radiale e trasversale:
 
 \[
-	E_\text{mecc}=\frac{1}{2}mv_r^2+\frac{1}{2}mv_\vartheta^2-\gamma \frac{mM}{r}=\frac{1}{2}mv_r^2+\underbrace{\underbrace{\frac{1}{2}\frac{\norma{\vec{L}}^2}{mr^2}}_B-\gamma\frac{mM}{r}}_A
+	E_\text{mecc}=\frac{1}{2}mv_r^2+\frac{1}{2}mv_\vartheta^2-\gamma \frac{mM}{r}=\frac{1}{2}mv_r^2+\underbrace{\underbrace{\frac{1}{2}\frac{\norm{\vec{L}}^2}{mr^2}}_B-\gamma\frac{mM}{r}}_A
 \]
 
 Per come è stato riscritto il termine $B$, esso è diventato una funzione che dipende da $L$, costante, e da un termine funzione della posizione. È allora un'energia posizionale, ossia potenziale. $A$ prende il nome di \textbf{energia potenziale gravitazionale efficace}. Si è attribuito così un significato fisico energetico diverso al secondo membro. Questa energia porta con sé una parte dell'energia cinetica, ma, in presenza di forze centrali, si può esprimere come funzione delle coordinate in quanto dipende solo dalla distanza di $m$ da $M$.

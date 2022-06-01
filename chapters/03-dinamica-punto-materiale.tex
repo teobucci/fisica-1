@@ -606,12 +606,12 @@ Si comincia studiando la forza di attrito radente. Ne esistono due tipologie:
 \begin{itemize}
 	\item statico. Si oppone al tentativo di movimento e permette a un corpo soggetto a forze di rimanere in equilibrio. A livello microscopico accade che tra i due corpi, le cariche presenti sulla superficie si attraggono e le zone rugose, grazie all'attrazione elettrostatica, vanno a creare delle microfusioni sulla superficie di contatto. Se il corpo non si muove significa che non si sono spezzate queste microfusioni. Si può dimostrare che la forza di attrito radente statico può assumere tutti valori possibili al i sotto di un valore che corrisponde alla situazione in cui si vanno a rompere le microfusioni che si formano. Questo valore massimo, nel caso dell'attrito statico, non dipende dall'estensione della superficie di contatto ma da quanto sono rugosi i due corpi interessati, aspetto che si caratterizza con il \emph{coefficiente di attrito statico} $\mu_s$, e da quanto il corpo sta scaricando sul piano il suo peso.
 	\begin{gather*}
-		\vec{R}_{t, max}=-\mu_s\,\norma{\vec{R}_n}\,\vec{u}_t \\
-		\norma{\vec{F}_0}<\norma{\vec{R}_{t, max}} \implies \text{il corpo è fermo}
+		\vec{R}_{t, max}=-\mu_s\,\norm{\vec{R}_n}\,\vec{u}_t \\
+		\norm{\vec{F}_0}<\norm{\vec{R}_{t, max}} \implies \text{il corpo è fermo}
 	\end{gather*}
 	\item dinamico. Si ha quando si applica una forza maggiore di $\vec{R}_{t, max}$ e il corpo di conseguenza si muove. Anche in questo caso $\vec{R}(t)$ non è un valore noto a priori. In condizioni dinamiche il modulo di $\vec{R}(t)$ è pari a:
 	\[
-		\norma{\vec{R}_t}=\mu_d\,\norma{\vec{R}_{n}}
+		\norm{\vec{R}_t}=\mu_d\,\norm{\vec{R}_{n}}
 	\]
 	Dove $\mu_d$ è il coefficiente di attrito dinamico. Si può in generale affermare che il valore del coefficiente di attrito dinamico è inferiore a quello del coefficiente di attrito statico. Questo a indice del fatto che è più facile mantenere in movimento un corpo su un piano scabro che metterlo in moto. Infatti mentre il corpo si muove si continuano a rompere e formare le microfusioni.
 \end{itemize}
@@ -764,7 +764,7 @@ Partendo da $0$ la velocità cresce, ma sempre più lentamente, per $t\gg\frac{1
 \subparagraph{Piano inclinato con attrito} Si riprenda il problema del corpo sul piano inclinato supponendo che esso sia scabro. Si immagini di poterne variare l'inclinazione a proprio piacimento. L'obbiettivo è di cercare l'angolo $\vartheta$ massimo al di sopra del quale il corpo si muove, mostrando che esso non dipende dalla massa del corpo.
 
 \[
-	\norma{\vec{P}_x} \le \norma{\vec{F}_d} = \norma{\vec{P}_y}\mu_s 	\implies mg\sin\vartheta\le mg\cos\vartheta \mu_s
+	\norm{\vec{P}_x} \le \norm{\vec{F}_d} = \norm{\vec{P}_y}\mu_s 	\implies mg\sin\vartheta\le mg\cos\vartheta \mu_s
 \]
 
 \begin{equation}
@@ -924,7 +924,7 @@ Così come la quantità di moto varia nel tempo sotto l'azione delle forze che a
 A pari intensità della forza il momento è più grande se la distanza dal cardine è più lunga e c'è se la forza ha una componente ortogonale al raggio che identifica la posizione del punto $P$ rispetto al polo $O$.
 
 \[
-	\boxed{\norma{\vec{M}^{(o)}}= \norma{\vec{r}\,^{(o)}} \norma{\vec{F}} \sin\vartheta}
+	\boxed{\norm{\vec{M}^{(o)}}= \norm{\vec{r}\,^{(o)}} \norm{\vec{F}} \sin\vartheta}
 \]
 
 In caso contrario, la forza ha solo l'effetto di trazione oppure di compressione, non ha momento e quindi non permette all'oggetto di ruotare intorno al polo.
@@ -1363,7 +1363,7 @@ Si ipotizzi ore di legare con un filo il punto all'asse di rotazione e di dargli
 \paragraph{Forza centrifuga} Si immagini ora di avere un filo a piombo sospeso lungo la verticale. A causa dell'effetto della rotazione terrestre non si vede il lampadario diretto lungo la direzione dell'accelerazione di gravità. Sull'oggetto agisce la forza peso compensata dalla tensione del filo. Un osservatore assoluto vede il filo a piombo che ha la direzione che congiunge il punto materiale con il centro della Terra. L'osservatore mobile dovrà introdurre delle forze apparenti. L'unica in questo caso è la forza centrifuga, che sarà:
 
 \[
-	\vec{F}_{\text{cf}}=-m \vec{\omega} \times (\vec{\omega} \times \vec{r'} ) \implies \norma{\vec{F}_{\text{cf}}}=m\omega^2 R_t \cos\lambda
+	\vec{F}_{\text{cf}}=-m \vec{\omega} \times (\vec{\omega} \times \vec{r'} ) \implies \norm{\vec{F}_{\text{cf}}}=m\omega^2 R_t \cos\lambda
 \]
 
 Sulla Terra si percepisce un'accelerazione complessiva in modo tale che il filo a piombo non punterà veramente verso il centro della Terra ma è leggermente inclinato verso sud nell'emisfero boreale, verso Nord nell'emisfero australe (verso l'equatore).
