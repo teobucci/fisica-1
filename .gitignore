@@ -255,3 +255,4 @@ TSWLatexianTemp*
 *.sta
 fisica1_preview.pdf
 main.pdf
+*.DS_Store
