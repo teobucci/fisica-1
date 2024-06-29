@@ -1,6 +1,12 @@
-# Appunti di Fisica 1
+# Appunti di Fisica Sperimentale 1
 
-Questo è il risultato di appunti presi durante il corso, trascritti e rivisti in parte durante la preparazione dell'esame. Di conseguenza, conterrà inevitabilmente errori e imprecisioni. Nessun docente ha revisionato il contenuto. Pertanto, usatelo a piacimento e con responsabilità. E se proprio volete essere dei pro, potete fare una PR per aggiustare errori o proporre modifiche.
+> [!NOTE]
+> Dove trovo il PDF compilato? Nella sezione **Releases** di questa pagina trovi tutte le versioni del PDF, pronte per essere scaricate.
+
+> [!WARNING]
+> Questo è il risultato di appunti presi durante il corso, trascritti e rivisti in parte durante la preparazione dell'esame. Di conseguenza, conterrà inevitabilmente errori e imprecisioni. Nessun docente ha revisionato il contenuto. Pertanto, usatelo a piacimento e con responsabilità.
+
+Sono sempre ben accetti suggerimenti e correzioni, potete aprire una issue o fare una Pull Request.
 
 ## Licenza
 
