@@ -479,7 +479,7 @@ Si consideri due corpi collegati ad un filo. Per quanto appena detto, essi prese
 
 \begin{gather*}
 	F_0\cos\vartheta=(m_1+m_2)\,a \\
-	R_n=m_2 g-F_0\sin\vartheta \quad \text{condizione essenziale è che} \quad F_0\sin\vartheta>m_2 g,
+	R_n=m_2 g-F_0\sin\vartheta \quad \text{condizione essenziale è che} \quad F_0\sin\vartheta<m_2 g,
 \end{gather*}
 
 altrimenti il corpo verrebbe sollevato e non si avrebbe più contatto.
@@ -604,7 +604,7 @@ Si noti che si ha $a=g\sin\vartheta$: il corpo scende con moto uniformemente acc
 Si comincia studiando la forza di attrito radente. Ne esistono due tipologie:
 
 \begin{itemize}
-	\item statico. Si oppone al tentativo di movimento e permette a un corpo soggetto a forze di rimanere in equilibrio. A livello microscopico accade che tra i due corpi, le cariche presenti sulla superficie si attraggono e le zone rugose, grazie all'attrazione elettrostatica, vanno a creare delle microfusioni sulla superficie di contatto. Se il corpo non si muove significa che non si sono spezzate queste microfusioni. Si può dimostrare che la forza di attrito radente statico può assumere tutti valori possibili al i sotto di un valore che corrisponde alla situazione in cui si vanno a rompere le microfusioni che si formano. Questo valore massimo, nel caso dell'attrito statico, non dipende dall'estensione della superficie di contatto ma da quanto sono rugosi i due corpi interessati, aspetto che si caratterizza con il \emph{coefficiente di attrito statico} $\mu_s$, e da quanto il corpo sta scaricando sul piano il suo peso.
+	\item statico. Si oppone al tentativo di movimento e permette a un corpo soggetto a forze di rimanere in equilibrio. A livello microscopico accade che tra i due corpi, le cariche presenti sulla superficie si attraggono e le zone rugose, grazie all'attrazione elettrostatica, vanno a creare delle microfusioni sulla superficie di contatto. Se il corpo non si muove significa che non si sono spezzate queste microfusioni. Si può dimostrare che la forza di attrito radente statico può assumere tutti valori possibili al di sotto di un valore che corrisponde alla situazione in cui si vanno a rompere le microfusioni che si formano. Questo valore massimo, nel caso dell'attrito statico, non dipende dall'estensione della superficie di contatto ma da quanto sono rugosi i due corpi interessati, aspetto che si caratterizza con il \emph{coefficiente di attrito statico} $\mu_s$, e da quanto il corpo sta scaricando sul piano il suo peso.
 	\begin{gather*}
 		\vec{R}_{t, max}=-\mu_s\,\norm{\vec{R}_n}\,\vec{u}_t \\
 		\norm{\vec{F}_0}<\norm{\vec{R}_{t, max}} \implies \text{il corpo è fermo}
@@ -826,7 +826,7 @@ Partendo da $0$ la velocità cresce, ma sempre più lentamente, per $t\gg\frac{1
 	\end{tikzpicture}
 \end{figure}
 
-Se invece il corpo all'istante iniziale sta scendendo lungo il piano con velocità $v$, se non si verifica la ~\eqref{eqn:attrito}, vi sarà moto uniformemente accelerato, altrimenti si fermerà. Infine se $\tan\vartheta=\mu_s$, il moto sarà uniforme. L'unica differenza rispetto alla partenza da fermo è che si può avere moto.
+Se invece il corpo all'istante iniziale sta scendendo lungo il piano con velocità $v$, se non si verifica la ~\eqref{eqn:attrito}, vi sarà moto uniformemente accelerato, altrimenti si fermerà. Infine se $\tan\vartheta=\mu_d$, il moto sarà uniforme. L'unica differenza rispetto alla partenza da fermo è che si può avere moto.
 
 \section{Momento della forza e momento angolare}
 
@@ -929,7 +929,7 @@ A pari intensità della forza il momento è più grande se la distanza dal cardi
 
 In caso contrario, la forza ha solo l'effetto di trazione oppure di compressione, non ha momento e quindi non permette all'oggetto di ruotare intorno al polo.
 
-Se si studia il moto del punto $P$ rispetto a un polo si potrò calcolare il momento di ognuna delle forze agenti su di esso. La somma di tutti questi momenti da luogo alla \emph{risultante} dei momenti che stanno agendo sul punto materiale.
+Se si studia il moto del punto $P$ rispetto a un polo si potrà calcolare il momento di ognuna delle forze agenti su di esso. La somma di tutti questi momenti dà luogo alla \emph{risultante} dei momenti che stanno agendo sul punto materiale.
 
 \begin{figure}[htpb]
 	\centering
@@ -1010,7 +1010,7 @@ Si chiama in tal modo perché si può dimostrare che è un principio fondamental
 
 \section{Dinamica relativa}
 
-Nel capitolo 2 si è determinato il legame sia in termini di velocità che di accelerazione fra ciò che rilevano l'osservatore assoluto e quello relativo. Vediamo come queste leggi si traducono sul moto di un corpo nel momento in cui su di esso agiscono delle forze. L'obbiettivo del paragrafo è quello di capire come l'osservatore dal sistema di riferimento mobile posso ancora usare i principi della dinamica newtoniana.
+Nel capitolo 2 si è determinato il legame sia in termini di velocità che di accelerazione fra ciò che rilevano l'osservatore assoluto e quello relativo. Vediamo come queste leggi si traducono sul moto di un corpo nel momento in cui su di esso agiscono delle forze. L'obbiettivo del paragrafo è quello di capire come l'osservatore dal sistema di riferimento mobile possa ancora usare i principi della dinamica newtoniana.
 Il problema si presenta perché essi valgono solo se il sistema di riferimento è inerziale. In tal caso si ha:
 
 \[
@@ -1053,13 +1053,13 @@ Il terimine $\vec{F}_{\text{app}}$ dimensionalmente è una forza e per questo mo
 Si vede come allora sia possibile introdurre un secondo principio della dinamica modificato per i sistemi di riferimento non inerziali grazie a questo nuovo termine.
 
 \[
-	\vec{F}_{\text{app}}=(-m\vec{a}_{o'})+(-m\vec{\omega}\times \vec{\omega} \times \vec{r})+(-mr'\vec{\alpha})+(-2m\vec{\omega} \times \vec{v}_{\text{rel}})
+	\vec{F}_{\text{app}}=(-m\vec{a}_{o'})+(-m\vec{\omega}\times \vec{\omega} \times \vec{r'})+(-m\vec{\alpha}\times\vec{r'})+(-2m\vec{\omega} \times \vec{v}_{\text{rel}})
 \]
 
 In particolare, la forza:
 
 \[
-	\vec{F}_{\text{cf}}=-m\vec{\omega}\times \vec{\omega} \times \vec{r}
+	\vec{F}_{\text{cf}}=-m\vec{\omega}\times \vec{\omega} \times \vec{r'}
 \]
 è la cosiddetta \textbf{forza apparente centrifuga}. Il suo effetto può essere facilmente percepito quando ci si trova su un'automobile che percorre una rotatoria e si ha l'impressione di essere spinti verso l'esterno. Invece:
 
@@ -1293,7 +1293,7 @@ L'osservatore $O$ invece osserverà un normale moto di caduta verticale uniforme
 	% Text Node
 	\draw (344.5,88) node    {$m$};
 	% Text Node
-	\draw (195,236.5) node    {$-m\vec{a}_{O}$};
+	\draw (195,236.5) node    {$-m\vec{a}_{O'}$};
 	% Text Node
 	\draw (412,235.5) node    {$\vec{R}_{t}$};
 
@@ -1354,7 +1354,7 @@ La velocità lineare non è uguale per i punti sulla giostra: il bambino al cent
 
 \paragraph{Secondo esempio} Si consideri ora il sistema inerziale $O$ costituito da una coppia di assi cartesiani $x, y$ posti su un piano orizzontale, e il sistema non inerziale $O'$ costituito da un'altra coppia di assi $x', y'$ con la stessa origine e nello stesso piano, ruotanti con velocità angolare costante $\omega$. Si può ad esempio assumere gli assi $x', y'$ solidali ad un disco posto nel piano $x, y$ che ruota rispetto ad un asse passante per il suo centro e ortogonale al piano $x, y$. Se si pone un punto materiale sul disco, con attrito nullo, il punto $P$ rimane fermo mentre il disco gira sotto di esso. Se $P$ lasciasse una traccia, si osserverebbe una circonferenza di raggio $R$, con centro nell'origine comune dei due sistemi. Per l'osservatore $O$ il punto è in quiete, mentre per quello rotante $O'$ descrive un moto circolare uniforme. $O'$ deve allora ipotizzare che agiscano delle forze (centrifuga e di Coriolis) le quali, combinandosi, comunicano al punto l'accelerazione $a'$. Rimane il problema dell'origine di queste forze.
 
-Si ipotizzi ore di legare con un filo il punto all'asse di rotazione e di dargli una velocità di modulo $\omega r$ in modo tale che ruoti con la stessa velocità del punto del disco su cui si trova. La situazione è opposta a quella precedente: per $O$ il punto descrive un moto circolare uniforme sotto l'azione della tensione del filo, mentre $O'$ vede il punto fermo. Esso è costretto a supporre che sul punto agisca una forza diretta verso l'esterno, che chiama forza centrifuga, bilanciata dalla tensione del filo. Per verificare l'ipotesi $O'$ traccia un segno radiale sul disco e recide il legame tra il punto e l'origine degli assi, immaginando di vederlo allontanarsi radialmente sotto l'azione della forza centrifuga, in quanto è stata annullata la forza esercitata dal filo. In effetti $O'$ osserva un moto del punto materiale, però lungo una traiettoria curvilinea, e deve quindi ammettere, come già fatto, che sui punti in moto nel suo sistema di rifermo, agisca un'altra forza che non si manifesta quando sono in quiete, la forza di Coriolis. Nel sistema inerziale invece il punto materiale all'istante in cui viene lasciato libero inizia a muoversi di moto rettilineo uniforme con direzione tangente alla circonferenza nella posizione in cui avviene il distacco dal vincolo.  In un sistema rotante è corretto attribuire alla forza centrifuga la tendenza allo spostamento radiale verso l'esterno e alla forza di Coriolis l'incurvamento della traiettoria osservata. La cosa importante è avere ben chiara l'origine di tali forze apparenti e utilizzarle correttamente dove appropriato e non estendere la loro esistenza ai sistemi inerziali.
+Si ipotizzi ora di legare con un filo il punto all'asse di rotazione e di dargli una velocità di modulo $\omega r$ in modo tale che ruoti con la stessa velocità del punto del disco su cui si trova. La situazione è opposta a quella precedente: per $O$ il punto descrive un moto circolare uniforme sotto l'azione della tensione del filo, mentre $O'$ vede il punto fermo. Esso è costretto a supporre che sul punto agisca una forza diretta verso l'esterno, che chiama forza centrifuga, bilanciata dalla tensione del filo. Per verificare l'ipotesi $O'$ traccia un segno radiale sul disco e recide il legame tra il punto e l'origine degli assi, immaginando di vederlo allontanarsi radialmente sotto l'azione della forza centrifuga, in quanto è stata annullata la forza esercitata dal filo. In effetti $O'$ osserva un moto del punto materiale, però lungo una traiettoria curvilinea, e deve quindi ammettere, come già fatto, che sui punti in moto nel suo sistema di rifermo, agisca un'altra forza che non si manifesta quando sono in quiete, la forza di Coriolis. Nel sistema inerziale invece il punto materiale all'istante in cui viene lasciato libero inizia a muoversi di moto rettilineo uniforme con direzione tangente alla circonferenza nella posizione in cui avviene il distacco dal vincolo.  In un sistema rotante è corretto attribuire alla forza centrifuga la tendenza allo spostamento radiale verso l'esterno e alla forza di Coriolis l'incurvamento della traiettoria osservata. La cosa importante è avere ben chiara l'origine di tali forze apparenti e utilizzarle correttamente dove appropriato e non estendere la loro esistenza ai sistemi inerziali.
 
 \subsubsection{Il moto rispetto alla Terra}
 

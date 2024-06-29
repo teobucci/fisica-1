@@ -134,7 +134,7 @@ Se si va a calcolare il lavoro di tutte le forze mentre il punto si starà muove
 	\end{aligned}
 \end{equation*}
 
-Questa relazione afferma che quando su un punto materiale agiscono delle forze, il lavoro compiuto da tutte le forze ha l'effetto di variare la velocità del punto materiale in modo tale che $\mathcal{L} \frac{1}{2}m(v^2_B-v^2_A)$
+Questa relazione afferma che quando su un punto materiale agiscono delle forze, il lavoro compiuto da tutte le forze ha l'effetto di variare la velocità del punto materiale in modo tale che $\mathcal{L} = \frac{1}{2}m(v^2_B-v^2_A)$.
 Questa espressione rappresenta un'energia a cui si da il nome di energia cinetica. Si definisce l'\textbf{energia cinetica} posseduta da un punto materiale come la quantità energetica:
 
 \[
@@ -167,7 +167,7 @@ Allora il teorema delle forze vive afferma che il lavoro di tutte le forze compi
 \end{figure}
 \FloatBarrier
 Si chiama anche teorema delle forze vive perché comunica che le uniche forze che hanno l'effetto di far variare il valore della velocità sono quelle tangenti al moto.
-In realtà la definizione di $E_k$ non è univoca ma è definita a meno di una costante aggiuntiva, che si sceglie uguale a zero in modo tale che un corpo a riposo abbia energia cinetica nulla. In questo modo tale concetto assume anche un significato fisico. La nozione di lavoro infatti, e quindi anche quella di variazione di energia cinetica, è necessariamente legata a quella di spostamento: se non c'è spostamento non può esserci lavoro, qualunque sia la forza applicata. Il lavoro fatto da una forza dipende in generale dalla traiettoria su cui si sta muovendo il corpo. Non si perde la dipendenza dalla traiettoria nella definizione di energia cinetica, infatti, a seconda di essa, il valore con cui il punto arriva in $B$ sarà in generale diversa.
+In realtà la definizione di $E_k$ non è univoca ma è definita a meno di una costante aggiuntiva, che si sceglie uguale a zero in modo tale che un corpo a riposo abbia energia cinetica nulla. In questo modo tale concetto assume anche un significato fisico. La nozione di lavoro infatti, e quindi anche quella di variazione di energia cinetica, è necessariamente legata a quella di spostamento: se non c'è spostamento non può esserci lavoro, qualunque sia la forza applicata. Il lavoro fatto da una forza dipende in generale dalla traiettoria su cui si sta muovendo il corpo. Non si perde la dipendenza dalla traiettoria nella definizione di energia cinetica, infatti, a seconda di essa, il valore con cui il punto arriva in $B$ sarà in generale diverso.
 
 Le due seguenti relazioni:
 
@@ -180,10 +180,10 @@ portano ovviamente allo stesso risultato e il loro campo di validità è lo stes
 Si può riscrivere il teorema dell'energia cinetica (e anche di conservazione dell'energia meccanica di conseguenza) per i sistemi non inerziali. Si dovrà tenere conto del lavoro compiuto anche da tutte le forze apparenti:
 
 \[
-	\mathcal{L}_{\text{F}_{\text{reali}}}+\mathcal{L}_{\text{F}_{\text{app}}}=\Delta E_{ \text{k, rel}}
+	\mathcal{L}_{\text{F}_{\text{reali}}}+\mathcal{L}_{\text{F}_{\text{app}}}=\Delta E_{k, \text{ rel}}
 \]
 
-Nel calcolo del lavoro bisogna valutare quello delle forze mentre il punto materiali si muove sulla traiettoria percepita dall'osservatore relativo. Se le forze apparenti non fossero costanti mentre il punto si muove si tratterebbe di risolvere un'equazione differenziale, problema non che non verrà affrontato.
+Nel calcolo del lavoro bisogna valutare quello delle forze mentre il punto materiale si muove sulla traiettoria percepita dall'osservatore relativo. Se le forze apparenti non fossero costanti mentre il punto si muove si tratterebbe di risolvere un'equazione differenziale, problema non che non verrà affrontato.
 
 \section{Forze conservative e non}
 
@@ -432,7 +432,7 @@ Si considerino le sole forze conservative. L'obbiettivo è quello di scrivere in
 Ciò comporta che se si inverte il segno di percorrenza, cioè se si va da $B$ ad $A$, cambia solo il segno del lavoro. Inoltre, per un percorso chiuso $ABA$ lungo la traiettoria si avrà un lavoro nullo.
 
 \[
-	\boxed{\text{Forza conservativa} \iff \oint \vec{F} \cdot d\vec{s} = 0}
+	\boxed{\text{Forza conservativa} \iff \oint \vec{F} \cdot d\vec{r} = 0}
 \]
 
 Questa proprietà si può assumere come definizione di forza conservativa.
@@ -475,13 +475,13 @@ Per forze non conservative non vale la proprietà di invarianza del lavoro rispe
 Si riprenda il teorema dell'energia cinetica:
 
 \[
-	\mathcal{L}_\Gamma, A\to B= \Delta E_k
+	\mathcal{L}_{\Gamma, A\to B}= \Delta E_k
 \]
 
 Si riscrive il termine come il lavoro fatto dalle forze conservative e non mentre il punto materiale si sposta sulla traiettoria $\Gamma$ da $A$ a $B$.
 
 \[
-	\mathcal{L}_{\text{F.N.C.} \Gamma, A \to B}+\mathcal{L}_{\text{F.C.} \Gamma, A \to B}=\Delta E_k
+	\mathcal{L}_{\text{FNC}, \Gamma, A \to B}+\mathcal{L}_{\text{FC}, \Gamma, A \to B}=\Delta E_k
 \]
 
 Il lavoro delle forze conservative si può definire come l'opposto della variazione di energia potenziale:

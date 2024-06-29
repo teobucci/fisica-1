@@ -33,10 +33,10 @@ Si scrive la seconda legge della dinamica per tutti i punti fino all'$n$-esimo. 
 
 \[
 	\begin{cases}
-		\vec{F}_1^\text{int} + \vec{F}_1^\text{ext}=m\vec{a}_1=m\frac{d\vec{p}_1}{dt} \\
-		\vec{F}_2^\text{int} + \vec{F}_2^\text{ext}=m\vec{a}_2=m\frac{d\vec{p}_2}{dt} \\
+		\vec{F}_1^\text{int} + \vec{F}_1^\text{ext}=m\vec{a}_1=\frac{d\vec{p}_1}{dt} \\
+		\vec{F}_2^\text{int} + \vec{F}_2^\text{ext}=m\vec{a}_2=\frac{d\vec{p}_2}{dt} \\
 		\vdots \\
-		\vec{F}_n^\text{int} + \vec{F}_n^\text{ext}=m\vec{a}_n=m\frac{d\vec{p}_n}{dt}
+		\vec{F}_n^\text{int} + \vec{F}_n^\text{ext}=m\vec{a}_n=\frac{d\vec{p}_n}{dt}
 	\end{cases}
 \]
 
@@ -172,7 +172,7 @@ Questo risultato prende il nome di \textbf{primo teorema del centro di massa}. I
 	\boxed{\vec{R}_\text{tot}=\frac{d\vec{p}_\text{tot}}{dt}=\frac{dM_\text{tot}\vec{v}_\text{CM}}{dt}=M_\text{tot}\frac{d\vec{v}_\text{CM}}{dt}=M_\text{tot}\vec{a}_\text{CM}}
 \]
 
-L'accelerazione del centro di massa è la media pesata delle varie accelerazioni. Si vede quindi che Il suo moto è causato dalle forze esterne.  Questo risultato prende il nome di \textbf{secondo teorema del centro di massa} e, dal punto di vista delle informazioni che fornisce, è del tutto equivalente alla prima equazione cardinale della dinamica. Il suo vantaggio è che fa vedere il problema dello studio del sistema di punti materiali in maniera molto semplice.
+L'accelerazione del centro di massa è la media pesata delle varie accelerazioni. Si vede quindi che il suo moto è causato dalle forze esterne.  Questo risultato prende il nome di \textbf{secondo teorema del centro di massa} e, dal punto di vista delle informazioni che fornisce, è del tutto equivalente alla prima equazione cardinale della dinamica. Il suo vantaggio è che fa vedere il problema dello studio del sistema di punti materiali in maniera molto semplice.
 In aggiunta esso può diventare un principio di conservazione quando sul sistema non agiscono forze esterne. In questo caso il centro di massa si muove di moto rettilineo uniforme o, se era inizialmente fermo, rimane in quiete.
 Si è trasformato il complesso problema dello studio del moto di un sistema di punti materiali allo studio del moto di un singolo punto materiale che è il centro di massa.
 
@@ -336,8 +336,8 @@ C'è un termine comune a tutti i prodotti che non dipende dal pedice $i$, $\vec{
 	\sum_{i=1}^n(\vec{v}_0\times m_i\vec{v}_i)=\vec{v}_0 \times \sum_{i=1}^nm_i\vec{v}_i=\vec{v}_0\times (M_\text{tot}\vec{v}_\text{CM})
 \end{equation}
 
-Ricordando che $\frac{\sum_{i=1}^nd\vec{L}_i^{(o)}}{dt}=\frac{d\sum_{i=1}^n \vec{L}_i^{(o)}}{dt}$, si va a definire una nuova grandezza che è la somma di tutti i momenti angolari: $\vec{L}_\text{tot}^{(o)}$
-Il termine $\sum_{i=1}^n \vec{M}^\text{est}$ lo si chiama \textbf{risultante dei momenti delle forze esterne} ed è un termine che in generale non si elide. Per quanto riguarda il momento delle forze interne, quando si attua il prodotto vettoriale per i vari momenti bisogna sempre considerare il braccio della forza, non $\vec{r}$. Si vede che le coppie di forze hanno diversa distanza da $O$ ma hanno lo stesso braccio. La forza $\vec{F}_1$ genera sulla massa $m_1$ un momento diretto come in figura.
+Ricordando che $\frac{\sum_{i=1}^nd\vec{L}_i^{(o)}}{dt}=\frac{d\sum_{i=1}^n \vec{L}_i^{(o)}}{dt}$, si va a definire una nuova grandezza che è la somma di tutti i momenti angolari: $\vec{L}_\text{tot}^{(o)}$.
+Il termine $\sum_{i=1}^n \vec{M}^\text{ext}$ lo si chiama \textbf{risultante dei momenti delle forze esterne} ed è un termine che in generale non si elide. Per quanto riguarda il momento delle forze interne, quando si attua il prodotto vettoriale per i vari momenti bisogna sempre considerare il braccio della forza, non $\vec{r}$. Si vede che le coppie di forze hanno diversa distanza da $O$ ma hanno lo stesso braccio. La forza $\vec{F}_1$ genera sulla massa $m_1$ un momento diretto come in figura.
 
 \begin{figure}[htpb]
 	\centering
@@ -396,7 +396,7 @@ Il termine $\sum_{i=1}^n \vec{M}^\text{est}$ lo si chiama \textbf{risultante dei
 \FloatBarrier
 L'altra genera un momento in verso orario. Le due forze danno luogo a momenti uguali in modulo e opposti in verso. Per ogni coppia di forze, i momenti delle forze interne sono sempre uguali a zero.
 
-Il termine ~\eqref{ciao} è zero se come polo si sceglie il centro di massa, oppure se c'è un polo che si muove com velocità parallela al centro di massa o se esso è fisso nel sistema di riferimento inerziale. Questa equazione
+Il termine ~\eqref{ciao} è zero se come polo si sceglie il centro di massa, oppure se c'è un polo che si muove con velocità parallela al centro di massa o se esso è fisso nel sistema di riferimento inerziale. Questa equazione
 
 \[
 	\boxed{\vec{M}_\text{tot}^\text{ext,(o)}=\frac{d\vec{L}_\text{tot}^{(o)}}{dt}}
@@ -466,7 +466,7 @@ Il momento totale è diverso da zero perché le forze non giacciono sulla stessa
 
 Si capisce quindi come la prima equazione cardinale della dinamica permetta di studiare il moto del centro di massa, mentre la seconda parla del moto rotativo di tutti gli altri punti rispetto ad esso. Le due equazioni sono indipendenti.
 
-Se sul sistema agiscono delle forze che non danno luogo a un momento rispetto al polo $O$, si ha anche un questo caso un principio di conservazione.
+Se sul sistema agiscono delle forze che non danno luogo a un momento rispetto al polo $O$, si ha anche in questo caso un principio di conservazione.
 
 \paragraph{Esempio} Si consideri la bacchetta di una majorette che ruota con una certa velocità angolare $\vec{\omega}_0$.
 
@@ -502,7 +502,7 @@ Poi la bacchetta, che era inizialmente lunga $2d$, per un meccanismo interno che
 	\vec{M}_\text{tot}^\text{ext, (o)}=\frac{d\vec{L}_\text{tot}}{dt} \quad \vec{M}_\text{tot}^\text{ext}=0 \implies \vec{L}_\text{tot}^{(o)}=\text{cost}
 \end{gather*}
 
-Spostando più massa lontano dal centro di rotazione,  gli oggetti hanno velocità lineare maggiore a parità di $\omega$. Ma $v$ non può variare quindi deve diminuire $\omega$, per permette al momento angolare di conservarsi.
+Spostando più massa lontano dal centro di rotazione,  gli oggetti hanno velocità lineare maggiore a parità di $\omega$. Ma $v$ non può variare quindi deve diminuire $\omega$, per permettere al momento angolare di conservarsi.
 
 \begin{gather*}
 	\norm{v}=\omega_0 D \quad \vec{L}_\text{tot, in}=\omega_0 D^2m\vec{u}_z+\omega_0 D^2m\vec{u}_z=2\omega_0 D^2m\vec{u}_z \\
@@ -610,7 +610,7 @@ Se l'oggetto parte da fermo, quello che accade è che tenderà a scivolare a cau
 
 Le forze totali esterne sono $0$ in direzione $x$ e questo comporta che la quantità di moto totale del sistema valutata in tale direzione dovrà essere costante. Il sistema inizialmente aveva quantità di moto iniziale zero, quindi essa si deve continuare a mantenere tale: l'ascissa del centro di massa non deve variare nel tempo. Quando la massa si sposta verso destra il cuneo, per compensare, si sposta a sinistra. Se per assurdo la massa si spostasse e arrivasse dall'altra parte senza che il cuneo si muovesse, il centro di massa si sposterebbe in basso. Da un punto di vista fisico, ciò che fa spostare il cuneo è l'effetto di una forza interna. La reazione normale sull'oggetto è generata dal cuneo; allora la massa $m$ genererà su di esso una forza uguale e contraria.
 
-Si immagini di complicare la situazione avendo la forza d'attrito, interna, che rallenta il movimento. Il suo effetto è nullo nel valutare la prima equazione cardinale della dinamica. Ma dal punto di vista energetico queste forze interne hanno un effetto. L'attrito va a dissipare l'energia potenziale, così che l'oggetto arriverà al lato opposto del cuneo a quote via via inferiori. Quest'ultimo subirà una forza $-\vec{R}_n$ e $-\vec{R}_t$. L'oggetto scivolerà verso il basso. Ma è come se si muovesse su un sistema di riferimento relativo che trasla, perché il cuneo si muove. $\vec{R}_t$, $-\vec{R}_t$ si elidono. Vale Lo stesso per $\vec{R}_n$ e $-\vec{R}_n$. Il calcolo del lavoro è il lavoro della forza d'attrito valutata su tutto lo spostamento del cuneo. Si noti infatti che il cuneo e la massa seguono traiettorie diverse quindi, benché $\vec{R}_t$ e $-\vec{R}_t$ siano uguali ed opposte, il loro lavoro è valutato su una traiettoria differente.
+Si immagini di complicare la situazione avendo la forza d'attrito, interna, che rallenta il movimento. Il suo effetto è nullo nel valutare la prima equazione cardinale della dinamica. Ma dal punto di vista energetico queste forze interne hanno un effetto. L'attrito va a dissipare l'energia potenziale, così che l'oggetto arriverà al lato opposto del cuneo a quote via via inferiori. Quest'ultimo subirà una forza $-\vec{R}_n$ e $-\vec{R}_t$. L'oggetto scivolerà verso il basso. Ma è come se si muovesse su un sistema di riferimento relativo che trasla, perché il cuneo si muove. $\vec{R}_t$, $-\vec{R}_t$ si elidono. Vale lo stesso per $\vec{R}_n$ e $-\vec{R}_n$. Il calcolo del lavoro è il lavoro della forza d'attrito valutata su tutto lo spostamento del cuneo. Si noti infatti che il cuneo e la massa seguono traiettorie diverse quindi, benché $\vec{R}_t$ e $-\vec{R}_t$ siano uguali ed opposte, il loro lavoro è valutato su una traiettoria differente.
 
 \section{Urti tra due punti materiali}
 
@@ -695,7 +695,7 @@ Nello studio di un sistema elastico si possono utilizzare quindi le equazioni:
 
 Si pensi all'urto tra palle da biliardo, le forze che si scambiano durante l'urto non variano l'energia del sistema e si osserva trasferimento di energia cinetica da un corpo all'altro.
 
-\paragraph{urti anaelastici} Si tratta di urti che avvengono in presenza di forze interne non conservative con conseguente variazione di energia cinetica durante il fenomeno. Questa seconda classe rappresenta la vera categoria degli urti, la prima è principalmente un'idealizzazione. Se le forze interne sono dissipative l'energia cinetica diminuirà, anche se ci sono casi in cui le forze interne possono far aumentare l'energia del sistema.
+\paragraph{Urti anaelastici} Si tratta di urti che avvengono in presenza di forze interne non conservative con conseguente variazione di energia cinetica durante il fenomeno. Questa seconda classe rappresenta la vera categoria degli urti, la prima è principalmente un'idealizzazione. Se le forze interne sono dissipative l'energia cinetica diminuirà, anche se ci sono casi in cui le forze interne possono far aumentare l'energia del sistema.
 
 \paragraph{Urto completamente anaelastico} Tra gli urti anaelastici, si trova una sottoclasse di fenomeni di urto che prende il nome di \textbf{urti completamente anaelastici}: sono quei fenomeni di urto in cui i corpi che si sono urtati dopo l'evento rimangono insieme, formando un unico corpo puntiforme di massa $m_1+m_2$ che si muove con una certa velocità finale. Per far unire i corpi insieme devono aver agito forze interne che hanno dissipato l'energia cinetica. I due corpi, che si assimilano a punti materiali, durante l'urto si deformano in modo permanente e restano compenetrati. Il lavoro compiuto, a spese dell'energia cinetica iniziale, per fare avvenire la deformazione, non viene più recuperato, cosa che equivale ad affermare che le forze interne sviluppate nell'atto non sono conservative. Inoltre, dopo l'urto completamente anaelastico, non c'è più moto rispetto al centro di massa.
 
@@ -958,7 +958,7 @@ Ci si potrebbe chiedere se è possibile descrivere il sistema di punti semplicem
 \FloatBarrier
 Il generico punto di massa $m_i$ sarà descritto dal vettore posizione $\vec{r}_i$. Si potrà osservare il moto del sistema di punti guardando ciò che accade da un osservatore posto in $O$ oppure sul centro di massa. Quest'ultimo sistema di riferimento prende il nome di \emph{sistema di riferimento del centro di massa}. In genere gli assi vengono presi paralleli e equiversi rispetto a quelli del sistema di riferimento assoluto in $O$.
 
-Si definisce la posizione della generica massa $m_i$ rispetto al sistema di riferimento del centro di massa con il vettore posizione $\vec{r}_i'$. Sussiste allora la seguente relazione:
+Si definisce la posizione della generica massa $m_i$ rispetto al sistema di riferimento del centro di massa con il vettore posizione $\vec{r\,'}_i$. Sussiste allora la seguente relazione:
 
 \[
 	\forall i: \vec{r}_i = \vec{r}_\text{CM} + \vec{r\,'}_i
@@ -1046,7 +1046,7 @@ Si comincia andando a considerare la definizione di momento angolare totale del 
 	% Text Node
 	\draw (223.1,166.9) node    {$\vec{r}_{i}$};
 	% Text Node
-	\draw (272,125) node    {$\vec{r} '_{i}$};
+	\draw (272,125) node    {$\vec{r\,'}_i$};
 	% Text Node
 	\draw (260.2,165.6) node    {$\vec{r}_{CM}$};
 	% Text Node

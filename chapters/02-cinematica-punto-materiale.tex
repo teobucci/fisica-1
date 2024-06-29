@@ -842,7 +842,7 @@ Nel caso del moto circolare \emph{non uniforme}, oltre all'accelerazione centrip
 \end{gather*}
 
 \begin{equation}
-	\boxed{\vartheta(t)=\vartheta(t_0)+\omega_0(t-t_0)+\frac{1}{2}a_0(t-t_0)^2}
+	\boxed{\vartheta(t)=\vartheta(t_0)+\omega_0(t-t_0)+\frac{1}{2}\alpha_0(t-t_0)^2}
 \end{equation}
 
 \subsubsection{Moto armonico}
@@ -931,13 +931,13 @@ Tutti i punti del disco possiedono un'unica velocità angolare definita come in 
 Essa si esprime come segue:
 
 \[
-	\vec{\alpha}=\frac{d\vec{v}}{dt}=\frac{d(\vec{\omega} \times \vec{r})}{dt}=\frac{d\vec{\omega}}{dt} \times \vec{r}+\vec{\omega} \times \frac{d\vec{r}}{dt}=\vec{\alpha} \times \vec{r} + \vec{\omega} \times \vec{v}
+	\vec{a}=\frac{d\vec{v}}{dt}=\frac{d(\vec{\omega} \times \vec{r})}{dt}=\frac{d\vec{\omega}}{dt} \times \vec{r}+\vec{\omega} \times \frac{d\vec{r}}{dt}=\underbrace{\vec{\alpha} \times \vec{r}}_{\vec{a_t}}\, + \underbrace{\vec{\omega} \times \vec{v}}_{\vec{a_n}}
 \]
 
 Da questa relazione si vede che il vettore accelerazione tangente è pari al prodotto vettoriale fra l'accelerazione angolare e il raggio della circonferenza su cui si sta muovendo il punto. L'accelerazione normale è invece frutto di un doppio prodotto vettoriale:
 
 \[
-	\vec{a}_n=\vec{\omega} \times \vec{v}=\vec{\omega} \times ( \vec{r} \times \vec{\omega})
+	\vec{a}_n=\vec{\omega} \times \vec{v}=\vec{\omega} \times ( \vec{\omega} \times \vec{r})
 \]
 
 Si noti che che $\vec{\omega}$ e $\vec{r}$ sono ortogonali, quindi è sufficiente moltiplicare i loro moduli. Il risultato $\vec{\omega} \times \vec{r}$ è un vettore tangente alla circonferenza che va moltiplicato per $\vec{\omega}$, ortogonale al piano. Il vettore risultante è dunque ortogonale a quella tangente e a $\vec{u}_z$, puntante verso l'asse di rotazione. Il suo modulo è semplicemente il prodotto dei moduli, perché entra sempre in gioco $\sin\frac{\pi}{2}$.
@@ -1094,7 +1094,7 @@ In forma compatta, la legge di composizione delle velocità afferma che un punto
 	\text{Teorema delle velocità relative} \quad \boxed{\vec{v}_{\text{ass}}=\vec{v}_{\text{rel}}+\vec{v}_{\text{trasc}}}
 \]
 
-\paragraph{Esempio} La Terra è un sistema di riferimento mobile nel tempo. In termini di velocità vettoriale si identifica come in figura. Allora un osservatore che si trova in un punto della Terra, a causa della rotazione terrestre è trascinato a ruotare insieme ad essa. La velocità angolare è costante, quella lineare è sempre più piccola verso i poli. Si tratta di un classico esempio io cui si è trascinati insieme al sistema di riferimento in cui ci si muove.
+\paragraph{Esempio} La Terra è un sistema di riferimento mobile nel tempo. In termini di velocità vettoriale si identifica come in figura. Allora un osservatore che si trova in un punto della Terra, a causa della rotazione terrestre è trascinato a ruotare insieme ad essa. La velocità angolare è costante, quella lineare è sempre più piccola verso i poli. Si tratta di un classico esempio in cui si è trascinati insieme al sistema di riferimento in cui ci si muove.
 
 \begin{figure}[htpb]
 	\centering
@@ -1141,14 +1141,14 @@ In forma compatta, la legge di composizione delle velocità afferma che un punto
 Derivando il primo termine si ha:
 
 \[
-	\frac{d\vec{v}_{\text{rel}}}{dt}=\frac{d}{dt}\left(\frac{dx'}{dt}\vec{u}_{x'}+\frac{dy'}{dt}\vec{u}_{y'}+\frac{dz'}{dt}\vec{u}_{z'}\right)=\frac{d^2x'}{dt^2} \vec{u}_{x'} + \frac{d^2y'}{dt^2} \vec{u}_{y'}+ \frac{d^2z'}{dt^2} \vec{u}_{z'}
+	\frac{d\vec{v}_{\text{rel}}}{dt}=\frac{d}{dt}\left(\frac{dx'}{dt}\vec{u}_{x'}+\frac{dy'}{dt}\vec{u}_{y'}+\frac{dz'}{dt}\vec{u}_{z'}\right)=\frac{d^2x'}{dt^2} \vec{u}_{x'} + \frac{d^2y'}{dt^2} \vec{u}_{y'}+ \frac{d^2z'}{dt^2} \vec{u}_{z'} + \frac{dx'}{dt} \frac{d\vec{u}_{x'}}{dt}+ \frac{dy'}{dt} \frac{d\vec{u}_{y'}}{dt}+ \frac{dz'}{dt} \frac{d\vec{u}_{z'}}{dt}=\vec{a}_{\text{rel}}+\vec{\omega}\times\vec{v}_{\text{rel}}
 \]
 
-Il termine ottenuto prende il nome di \emph{accelerazione relativa}. Per quanto riguarda il secondo e il terzo termine avremo:
+I primi tre addendi prendono il nome di \emph{accelerazione relativa}. Per quanto riguarda il secondo e il terzo termine avremo:
 
 \begin{gather*}
-	\frac{d}{dt}(\vec{\omega} \times \vec{r}_{\text{rel}})=\frac{d\vec{\omega}}{dt} \times \vec{r}_{\text{rel}}+\vec{\omega} \times \frac{d\vec{r}_{\text{rel}} }{dt} = \vec{\alpha} \times \vec{r}_{\text{rel}}+\vec{\omega} \times( \vec{v}_{\text{rel}}+\vec{\omega} \times \vec{v}_{\text{rel}}) \\
-	\frac{d\vec{v}_{oo'}}{dt}= \frac{d^2x_{oo'}}{dt^2} \vec{u}_x+ \frac{d^2y_{oo'}}{dt^2} \vec{u}_y+ \frac{d^2z_{oo'}}{dt^2} \vec{u}_z+\vec{a}_{oo'}
+	\frac{d}{dt}(\vec{\omega} \times \vec{r}_{\text{rel}})=\frac{d\vec{\omega}}{dt} \times \vec{r}_{\text{rel}}+\vec{\omega} \times \frac{d\vec{r}_{\text{rel}} }{dt} = \vec{\alpha} \times \vec{r}_{\text{rel}}+\vec{\omega} \times( \vec{v}_{\text{rel}}+\vec{\omega} \times \vec{r}_{\text{rel}}) \\
+	\frac{d\vec{v}_{oo'}}{dt}= \frac{d^2x_{oo'}}{dt^2} \vec{u}_x+ \frac{d^2y_{oo'}}{dt^2} \vec{u}_y+ \frac{d^2z_{oo'}}{dt^2} \vec{u}_z=\vec{a}_{oo'}
 \end{gather*}
 
 E quindi:
