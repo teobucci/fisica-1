@@ -799,7 +799,7 @@ Il sistema infatti non scambia energia con l'ambiente, essendo le pareti rigide 
 	\end{tikzpicture}
 \end{figure}
 \FloatBarrier
-Visto questo esempio, che ha portato a dedurre che $U=f(T)$, si considerino nel piano di Clapeyron due stati. Si vuole calcolare la variazione di energia interna fra essi. Lo si può fare lungo una qualsiasi trasformazione perché $U$ è una funzione di stato, quindi $\Delta U$ sarà sempre la stessa. Si sceglie quindi una trasformazione semplice che dallo stato finale fa comprimere il gas fino a che non arriva al volume dello stato iniziale.
+Visto questo esempio, che ha portato a dedurre che $U=f(T)$, si considerino nel piano di Clapeyron due stati $A$ e $B$. Si vuole calcolare la variazione di energia interna fra essi. Lo si può fare lungo una qualsiasi trasformazione che vada da $A$ a $B$ perché $U$ è una funzione di stato, quindi $\Delta U$ non dipende dal percorso ma solo dagli estremi. Si sceglie quindi una trasformazione semplice. Se si parte dallo stato finale, il gas viene compresso a temperatura costante fino a che non arriva al volume dello stato iniziale.
 
 \begin{figure}[htpb]
 	\centering
@@ -838,7 +838,7 @@ Visto questo esempio, che ha portato a dedurre che $U=f(T)$, si considerino nel 
 	\end{tikzpicture}
 \end{figure}
 \FloatBarrier
-Questo stato lo si chiama $C$. Poi si riscalda il gas in maniera isocora, cioè a volume costante. Fondamentalmente si parte dallo stato iniziale $A$, si riscaldo il gas fino allo stato $C$, e con una isoterma si arriva a $B$.
+Questo stato lo si chiama $C$. Poi si riscalda (o raffredda) il gas in maniera isocora, cioè a volume costante, fino ad arrivare ad $A$. Al contrario, quando si parte dallo stato iniziale $A$, si riscalda il gas fino allo stato $C$ a volume costante, e con una isoterma si arriva a $B$.
 Si può quindi vedere la variazione dell'energia interna come:
 
 \[
@@ -848,7 +848,7 @@ Si può quindi vedere la variazione dell'energia interna come:
 La seconda variazione di energia interna vale zero perché la temperatura in $B$ e in $C$ è la stessa. Quindi rimane soltanto da calcolare il primo termine. Da $A$ a $C$ non c'è lavoro compiuto dal gas perché non c'è variazione di pressione. Si calcola il calore scambiato sfruttando la definizione di calore specifico molare, con queste informazioni:
 
 \[
-	\Delta U_{A\to C} = Q_{\text{isocora} } - \mathcal{L}_{\text{isocora} } = nc_v(T_C-T_A  )
+	\Delta U_{A\to C} = Q_{\text{isocora} } - \underbrace{\mathcal{L}_{\text{isocora} }}_{=0} = nc_v(T_C-T_A  )
 \]
 $T_C$ è uguale a $T_B$ visto che la seconda trasformazione è isoterma. Si ottiene che la variazione di energia interna dallo stato iniziale $A$ allo stato finale $B$ è esprimibile come:
 
@@ -997,7 +997,7 @@ La trasformazione irreversibile si ha quando si rimuove il blocco in un colpo. L
 	\mathcal{L}_{\text{isoterma} } =\int \rho_{\text{gas} }dV = -\mathcal{L}_{est} = p_{est}\Delta V = p_{atm}\Delta V_{\text{gas} }    	
 \]
 
-\paragraph{Lavoro in una isocora} Si hanno $n$ moli di gas, in un recipiente a contatto con un serbatoio il cui tappo è bloccato. Si cambia serbatoio con uno a temperatura maggiore. Il gas piano piano va in equilibrio termico con esso. Il volume non sarà cambiato (nessun lavoro compiuto) ma ci si aspetta che la pressione lo sia. Il gas aumenta la sua energia interna grazie al fatto che assorbe calore dal serbatoio.
+\paragraph{Lavoro in una isocora} Si hanno $n$ moli di gas, in un recipiente rigido a contatto con un serbatoio termico. Si cambia serbatoio con uno a temperatura maggiore. Il gas piano piano va in equilibrio termico con esso. Il volume non sarà cambiato (nessun lavoro compiuto) ma ci si aspetta che la pressione lo sia. Il gas aumenta la sua energia interna grazie al fatto che assorbe calore dal serbatoio.
 
 \[Q-\mathcal{L}=Q=\Delta U\]
 
