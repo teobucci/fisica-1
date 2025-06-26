@@ -174,7 +174,7 @@ Questo risultato prende il nome di \textbf{primo teorema del centro di massa}. I
 
 L'accelerazione del centro di massa è la media pesata delle varie accelerazioni. Si vede quindi che il suo moto è causato dalle forze esterne.  Questo risultato prende il nome di \textbf{secondo teorema del centro di massa} e, dal punto di vista delle informazioni che fornisce, è del tutto equivalente alla prima equazione cardinale della dinamica. Il suo vantaggio è che fa vedere il problema dello studio del sistema di punti materiali in maniera molto semplice.
 In aggiunta esso può diventare un principio di conservazione quando sul sistema non agiscono forze esterne. In questo caso il centro di massa si muove di moto rettilineo uniforme o, se era inizialmente fermo, rimane in quiete.
-Si è trasformato il complesso problema dello studio del moto di un sistema di punti materiali allo studio del moto di un singolo punto materiale che è il centro di massa.
+Si è ridotto il complesso problema dello studio del moto di un sistema di punti materiali allo studio del moto di un singolo punto materiale che è il centro di massa.
 
 \paragraph{Esempio} Se il sistema è isolato, le equazioni ottenute diventano:
 
@@ -333,7 +333,7 @@ C'è un termine comune a tutti i prodotti che non dipende dal pedice $i$, $\vec{
 
 \begin{equation}
 	\label{ciao}
-	\sum_{i=1}^n(\vec{v}_0\times m_i\vec{v}_i)=\vec{v}_0 \times \sum_{i=1}^nm_i\vec{v}_i=\vec{v}_0\times (M_\text{tot}\vec{v}_\text{CM})
+	\sum_{i=1}^n(\vec{v}_0\times m_i\vec{v}_i)=\vec{v}_0 \times \sum_{i=1}^nm_i\vec{v}_i=\vec{v}_0\times (M_\text{tot}\vec{v}_\text{CM})=\vec v_0\times \vec p_\text{tot}
 \end{equation}
 
 Ricordando che $\frac{\sum_{i=1}^nd\vec{L}_i^{(o)}}{dt}=\frac{d\sum_{i=1}^n \vec{L}_i^{(o)}}{dt}$, si va a definire una nuova grandezza che è la somma di tutti i momenti angolari: $\vec{L}_\text{tot}^{(o)}$.
@@ -394,7 +394,11 @@ Il termine $\sum_{i=1}^n \vec{M}^\text{ext}$ lo si chiama \textbf{risultante dei
 	\end{tikzpicture}
 \end{figure}
 \FloatBarrier
-L'altra genera un momento in verso orario. Le due forze danno luogo a momenti uguali in modulo e opposti in verso. Per ogni coppia di forze, i momenti delle forze interne sono sempre uguali a zero.
+L'altra genera un momento in verso orario. Le due forze danno luogo a momenti uguali in modulo e opposti in verso. Per ogni coppia di forze, i momenti delle forze interne sono sempre uguali a zero. Abbiamo quindi ottenuto che
+
+\[
+\vec M_\text{tot}^{(o)}=\vec M_\text{tot}^{\text{ext},(o)}=\frac{d\vec L_\text{tot}^{(o)}}{dt}+\vec v_0 \times \vec p_\text{tot}
+\]
 
 Il termine ~\eqref{ciao} è zero se come polo si sceglie il centro di massa, oppure se c'è un polo che si muove con velocità parallela al centro di massa o se esso è fisso nel sistema di riferimento inerziale. Questa equazione
 

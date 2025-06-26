@@ -1021,7 +1021,7 @@ Da tale relazione si ricava un significato energetico per la costante dei gas id
 	\boxed{c_v + R = c_p  }  \qquad \text{relazione di Mayer}
 \]
 
-\paragraph{Trasformazioni adiabatiche reversibili} Si ha un gas perfetto contenuto in un recipiente in cui tutte le pareti sono adiabatiche, non permettono passaggio di calore all'esterno. Il gas si trova alla pressione $p_0$ e alla temperatura $T_0$. Si dovrà immaginare di poter rimuovere un ipotetica massa sopra il pistone molto lentamente. Alla fine si avrà che il gas è andato in equilibrio con la pressione atmosferica. Il volume e la temperatura saranno cambiati. Espandendosi si avrà una diminuzione della pressione e una variazione della temperatura. Tutte e tre le variabili termodinamiche cambiamo (caratteristica tipica delle adiabatiche). La pressione finale è tale da bilanciare quella esterna. Rimangono quindi due variabili termodinamiche da calcolare. Una la dà l'equazione di stato. Manca ancora una relazione per ricavare la terza variabile, si sfrutta quindi il primo principio della termodinamica:
+\paragraph{Trasformazioni adiabatiche reversibili} Si ha un gas perfetto contenuto in un recipiente in cui tutte le pareti sono adiabatiche, non permettono passaggio di calore all'esterno. Il gas si trova alla pressione $p_0$ e alla temperatura $T_0$. Si dovrà immaginare di poter rimuovere un'ipotetica massa sopra il pistone molto lentamente. Alla fine si avrà che il gas è andato in equilibrio con la pressione atmosferica. Il volume e la temperatura saranno cambiati. Espandendosi si avrà una diminuzione della pressione e una variazione della temperatura. Tutte e tre le variabili termodinamiche cambiano (caratteristica tipica delle adiabatiche). La pressione finale è tale da bilanciare quella esterna. Rimangono quindi due variabili termodinamiche da calcolare. Una la dà l'equazione di stato. Manca ancora una relazione per ricavare la terza variabile, si sfrutta quindi il primo principio della termodinamica:
 
 \[
 	\Delta U = \underbrace{Q}_{=0} - \mathcal{L}
@@ -1106,7 +1106,9 @@ Nella pratica l'adiabaticità perfetta non esiste: tutte le sostanze con cui si 
 
 \paragraph{Trasformazioni adiabatiche irreversibili} Se si realizza lo stesso processo in maniera irreversibile, togliendo ad esempio la massa che comprime il gas in un solo istante, non si potrà arrivare allo stesso volume $V$. Questo perché per trovare $pV^{\gamma}=\text{costante}$, è stato imposto che le variabili termodinamiche del gas in ogni punto soddisfino l'equazione di stato. Se il processo non lo si fa avvenire in maniera quasi statica non può valere la relazione trovata. Se si arriva a un volume finale diverso, il lavoro fatto dal gas durante il processo irreversibile adiabatico è diverso da quello compiuto durante il processo reversibile adiabatico.
 Si può comunque affermare che la variazione di energia interna sarà pari e opposta al lavoro fatto dal gas, ma si dovrà introdurre un'altra relazione per trovare entrambe le variabili incognite. Un'idea è quella di scrivere il lavoro come l'opposto di quello subito dall'ambiente esterno. Esso sarà dato da: $nc_v\Delta T = - p_{\text{fin}}\Delta V$.
-Si noti che tutte le trasformazioni viste possono essere scritte come:
+
+
+\paragraph{}\hspace{-1em}Si noti che tutte le trasformazioni reversibili viste possono essere scritte come:
 
 \[
 	pV^x=\text{costante} \left\{ \begin{array}{l}
@@ -1129,7 +1131,7 @@ e prende il nome di \textbf{politropica}. La dimostrazione si opera sfruttando i
 
 \subsection{Definizione e generalità}
 
-Uno dei motivi per cui è nata la termodinamica è quello di realizzare macchine termiche, ossia dispositivi realizzanti processi che permettono di trasformare un energia termica in lavoro meccanico. Un esempio semplice può essere l'espansione isoterma di un gas contenuto in un recipiente chiuso da un pistone e a contatto con un serbatoio. Essa avviene senza accumulo di energia interna: il calore fornito dal serbatoio si trasforma in lavoro meccanico. In tal caso il pistone si solleva una volta sola ma in genere si vuole che il lavoro meccanico venga ripetuto più volte. Questo significa che non basta realizzare la trasformazione una sola volta. Si mantiene sempre tutto a contatto con il serbatoio, e una volta che il pistone si è espanso si rimette la massa sopra facendo comprimere il sistema. In tal modo, il lavoro ottenuto passando da $A$ a $B$ lo si devo rifornire completamente tornando indietro, al netto non si è ottenuto nulla. Per realizzare un processo che al netto dia lavoro positivo, bisogna passare su una isoterma più bassa in modo tale che il lavoro tornando indietro sia meno intenso. Per fare ciò si segue in andata un tratto a pressione più alta di quello in cui avviene la compressione del gas. Questo è proprio un ciclo termodinamico caratteristico di una macchina termica.
+Uno dei motivi per cui è nata la termodinamica è quello di realizzare macchine termiche, ossia dispositivi realizzanti processi che permettono di trasformare un'energia termica in lavoro meccanico. Un esempio semplice può essere l'espansione isoterma di un gas contenuto in un recipiente chiuso da un pistone e a contatto con un serbatoio. Essa avviene senza accumulo di energia interna: il calore fornito dal serbatoio si trasforma in lavoro meccanico. In tal caso il pistone si solleva una volta sola ma in genere si vuole che il lavoro meccanico venga ripetuto più volte. Questo significa che non basta realizzare la trasformazione una sola volta. Si mantiene sempre tutto a contatto con il serbatoio, e una volta che il pistone si è espanso si rimette la massa sopra facendo comprimere il sistema. In tal modo, il lavoro ottenuto passando da $A$ a $B$ lo si deve rifornire completamente tornando indietro, al netto non si è ottenuto nulla. Per realizzare un processo che al netto dia lavoro positivo, bisogna passare su una isoterma più bassa in modo tale che il lavoro tornando indietro sia meno intenso. Per fare ciò si segue in andata un tratto a pressione più alta di quello in cui avviene la compressione del gas. Questo è proprio un ciclo termodinamico caratteristico di una macchina termica.
 
 \begin{figure}[htpb]
 	\centering
@@ -1165,13 +1167,13 @@ Uno dei motivi per cui è nata la termodinamica è quello di realizzare macchine
 Per un ciclo termodinamico si può sempre scrivere che:
 
 \begin{gather*}
-	\Delta U_{\text{ciclo} } = Q_{\text{ciclo} } - \mathcal{L}_{\text{ciclo} } \\
+	\Delta U_{\text{ciclo} } = Q_{\text{ciclo} } - \mathcal{L}_{\text{ciclo} }=0 \\
 	Q_{\text{ciclo} } = \mathcal{L}_{\text{ciclo} } > 0
 \end{gather*}
 
-La somma di tutti i calori scambiati durante il ciclo da luogo al lavoro netto compiuto durante il ciclo. Il lavoro totale in un ciclo termodinamico reversibile è allora l'area racchiusa da esso.
+La somma di tutti i calori scambiati durante il ciclo dà luogo al lavoro netto compiuto durante il ciclo. Il lavoro totale in un ciclo termodinamico reversibile è allora l'area racchiusa da esso.
 
-Si può osservare sperimentalmente che non è mai possibile realizzare un processo che comporta come unico risultato la trasformazione di tutto il calore fornito in lavoro. Una parte di calore fornito sarà sempre ceduto all'ambiente circostante o ad un serbatoio a temperatura più bassa.
+Si può osservare sperimentalmente che non è mai possibile realizzare un processo che comporta come unico risultato la trasformazione di tutto il calore fornito in lavoro. Una parte di calore fornito sarà sempre ceduta all'ambiente circostante o ad un serbatoio a temperatura più bassa.
 
 \begin{figure}[htpb]
 	\centering
@@ -1289,7 +1291,7 @@ E il calore ceduto:
 	\eta = 1-\frac{|Q_{\text{ced} } |}{Q_{\text{ass} } } = 1 - \frac{nRT_1\log (V_c/V_D  ) }{nRT_2\log (V_B/V_A) }
 \end{gather*}
 
-Si aggiunge la relazione caratteristica che lega gli stati tra un adiabatica reversibile.
+Si aggiunge la relazione caratteristica che lega gli stati tra un'adiabatica reversibile.
 
 \begin{gather*}
 	B\to C:\quad TV^{\gamma -1}=\text{costante} \qquad T_2 V_B^{\gamma -1}=T_1 V_C^{\gamma -1} \\
@@ -1297,7 +1299,7 @@ Si aggiunge la relazione caratteristica che lega gli stati tra un adiabatica rev
 	\left( \frac{V_B }{V_A } \right)^{\gamma -1} = \left( \frac{V_C }{V_D } \right)^{\gamma -1} \implies \frac{V_B }{V_A }=\frac{V_C }{V_D } \implies \boxed{\eta = 1-\frac{T_1 }{T_2 }}
 \end{gather*}
 
-Si vede che il rendimento della macchina di Carnot dipende solo dalla temperatura dei due serbatoi. Sfruttando il primo principio della termodinamica, cioè il fatto che nella macchia termica si segue un ciclo termodinamico, si può affermare che il lavoro fatto è pari alla somma dei calori scambiati con l'ambiente circostante.
+Si vede che il rendimento della macchina di Carnot dipende solo dalla temperatura dei due serbatoi. Sfruttando il primo principio della termodinamica, cioè il fatto che nella macchina termica si segue un ciclo termodinamico, si può affermare che il lavoro fatto è pari alla somma dei calori scambiati con l'ambiente circostante.
 
 \section{Macchine frigorifere}
 
@@ -2517,7 +2519,7 @@ La si applica a un caso particolare. Si consideri l'esperimento di espansione li
 	\end{tikzpicture}
 \end{figure}
 \FloatBarrier
-Si tratta di un processo irreversibile, il gas non tornerà mai indietro. Si tratta di un espansione adiabatica. Visto che il gas non scambia calore, si potrebbe pensare che allora nella relazione $dQ$ è pari a $0$ e quindi la variazione di entropia è nulla. Il calore scambiato invece non lo si può usare per calcolare la variazione di entropia perché è quello scambiato in maniera irreversibile. Per questo specifico caso, usando invece la relazione appena trovata:
+Si tratta di un processo irreversibile, il gas non tornerà mai indietro. Si tratta di un'espansione adiabatica. Visto che il gas non scambia calore, si potrebbe pensare che allora nella relazione $dQ$ è pari a $0$ e quindi la variazione di entropia è nulla. Il calore scambiato invece non lo si può usare per calcolare la variazione di entropia perché è quello scambiato in maniera irreversibile. Per questo specifico caso, usando invece la relazione appena trovata:
 
 \[
 	nc_v\log \frac{T_B }{T_A } = 0 \implies \Delta S_{\text{gas} } = nR\log \frac{V_B }{V_A }
@@ -2530,7 +2532,7 @@ In questo caso il gas aumenta sempre la sua entropia.
 \[
 	dS = \left( \frac{dQ}{T} \right)_{\text{rev}}
 \]
-$dQ$ non è un differenziale esatto però se tale quantità è divisa per $T$ ed è considerata in una trasformazione reversibile, essa da luogo al differenziale esatto $dS$.
+$dQ$ non è un differenziale esatto però se tale quantità è divisa per $T$ ed è considerata in una trasformazione reversibile, essa dà luogo al differenziale esatto $dS$.
 
 \section{Principio di accrescimento dell'entropia dell'universo}
 
@@ -2565,9 +2567,9 @@ Si vede ora quali informazioni in più porta considerare la disuguaglianza di Cl
 	% Text Node
 	\draw (269.17,100.17) node    {$B$};
 	% Text Node
-	\draw (147.67,109.67) node    {$T_{1}$};
+	\draw (147.67,109.67) node    {$\Gamma_{1}$};
 	% Text Node
-	\draw (230.67,181.17) node    {$T_{2}$};
+	\draw (230.67,181.17) node    {$\Gamma_{2}$};
 
 	\end{tikzpicture}
 \end{figure}
@@ -2577,7 +2579,7 @@ Si vede ora quali informazioni in più porta considerare la disuguaglianza di Cl
 	\oint \frac{dQ_{\text{rev} } }{T} = \int_{\Gamma_1,A\to B } \frac{dQ_{\text{irr} } }{T} + \underbrace{\int_{\Gamma_2,B\to A} \frac{dQ_{\text{rev} } }{T}}_{S(A)-S(B)} < 0
 \]
 
-La quantità a secondo termine non è altro che la variazione di entropia da $B$ ad $A$. $S(A)-S(B)$ lo si sposta a destra cambiandolo di segno.
+La quantità a secondo termine non è altro che la variazione di entropia da $B$ ad $A$. Si sposta a destra $S(A)-S(B)$ cambiandolo di segno.
 
 \[
 	\int_{\Gamma_1,A\to B } \frac{dQ_{\text{irr} } }{T} < S(B)-S(A)
@@ -2595,7 +2597,7 @@ Si applica questo risultato alla valutazione della variazione di entropia di un 
 	\Delta S_{\text{universo} } = \int_A^B \frac{dQ_{\text{rev} } }{T}
 \]
 
-Se all'interno dell'universo termodinamico avvengono solo trasformazioni reversibili il calore totale scambiato è quello reversibile. Dal momento che l'universo è isolato, il secondo termine vale $0$ perché tutte le trasformazioni nell'ipotesi sono irreversibili. Ciò significa che in questo caso la variazione di entropia sarà quindi uguale a $0$ e l'entropia è costante. Non aumenta quando si fa passare il sistema da uno stato iniziale a un altro stato.
+Se all'interno dell'universo termodinamico avvengono solo trasformazioni reversibili il calore totale scambiato è quello reversibile. Dal momento che l'universo è isolato, il secondo termine vale $0$ perché tutte le trasformazioni nell'ipotesi sono reversibili. Ciò significa che in questo caso la variazione di entropia sarà quindi uguale a $0$ e l'entropia è costante. Non aumenta quando si fa passare il sistema da uno stato iniziale a un altro stato.
 
 \[
 	\Delta S_{\text{universo}} = S(B)-S(A) > \int \frac{dQ_{\text{irr} } }{T}
@@ -2617,9 +2619,9 @@ Riscrivendo il risultato in maniera più compatta:
 	\boxed{\Delta S_{\text{universo}} \geq 0}
 \]
 
-Si potrebbe avere una trasformazione in cui per una certa parte del sistema termodinamico l'entropia diminuisce, ma contemporaneamente ci deve essere un'altra parte del sistema per cui l'entropia aumenta. Se il processo è reversibile, la diminuzione di entropia in una certa parte del sistema è bilanciata dall'aumento di entropia di un'altra parte del sistema. Se il processo è irreversibile, chi aumenta l'entropia subirà un aumento maggiore di cui la diminuisce, così che al netto la variazione di entropia è strettamente positiva. Dal punto di vista più generale, il principio lo si può vedere come un altro modo di enunciare il secondo principio della termodinamica. Ci si è arrivati infatti a partire dal teorema di Carnot, dimostrato sfruttando l'enunciato di Clausius del secondo principio della termodinamica.
+Si potrebbe avere una trasformazione in cui per una certa parte del sistema termodinamico l'entropia diminuisce, ma contemporaneamente ci deve essere un'altra parte del sistema per cui l'entropia aumenta. Se il processo è reversibile, la diminuzione di entropia in una certa parte del sistema è bilanciata dall'aumento di entropia di un'altra parte del sistema. Se il processo è irreversibile, chi aumenta l'entropia subirà un aumento maggiore di chi la diminuisce, così che al netto la variazione di entropia è strettamente positiva. Dal punto di vista più generale, il principio lo si può vedere come un altro modo di enunciare il secondo principio della termodinamica. Ci si è arrivati infatti a partire dal teorema di Carnot, dimostrato sfruttando l'enunciato di Clausius del secondo principio della termodinamica.
 
-I processi che avvengono realmente, tendono sempre a generare una forma di energia che è più disordinata di quella avuta in partenza. Il principio di accrescimento dell'entropia dell'universo ha il significato di affermare che il disordine dell'universo tende sempre ad aumentare. Si è visto questo anche quando è stato fatto l'esempio dell'oggetto che si muove su un piano. L'energia cinetica ordinata si trasforma spontaneamente in calore, che è un'energia più disordinata legata al moto di agitazione termica delle molecole.
+I processi che avvengono realmente tendono sempre a generare una forma di energia che è più disordinata di quella avuta in partenza. Il principio di accrescimento dell'entropia dell'universo ha il significato di affermare che il disordine dell'universo tende sempre ad aumentare. Si è visto questo anche quando è stato fatto l'esempio dell'oggetto che si muove su un piano. L'energia cinetica ordinata si trasforma spontaneamente in calore, che è un'energia più disordinata legata al moto di agitazione termica delle molecole.
 
 \begin{figure}[htpb]
 	\centering
@@ -2773,18 +2775,18 @@ In seguito ci sono alcuni esempi in cui si verifica questo principio calcolando 
 
 	% Text Node
 	\draw    (113.33, 107.33) circle [x radius= 32.31, y radius= 32.31]   ;
-	\draw (113.33,107.33) node    {$m_{1} \ c\ T_{1}$};
+	\draw (113.33,107.33) node    {$m_{1} \ c_1\ T_{1}$};
 	% Text Node
 	\draw    (191.33, 107.33) circle [x radius= 32.31, y radius= 32.31]   ;
-	\draw (191.33,107.33) node    {$m_{2} \ c\ T_{2}$};
+	\draw (191.33,107.33) node    {$m_{2} \ c_2\ T_{2}$};
 	% Text Node
 	\draw (153.33,163.67) node   [align=left] {prima};
 	% Text Node
 	\draw    (333.33, 107.33) circle [x radius= 34.18, y radius= 34.18]   ;
-	\draw (333.33,107.33) node    {$m_{1} \ c\ T_{eq}$};
+	\draw (333.33,107.33) node    {$m_{1} \ c_1\ T_{eq}$};
 	% Text Node
 	\draw    (411.33, 107.33) circle [x radius= 34.18, y radius= 34.18]   ;
-	\draw (411.33,107.33) node    {$m_{2} \ c\ T_{eq}$};
+	\draw (411.33,107.33) node    {$m_{2} \ c_2\ T_{eq}$};
 	% Text Node
 	\draw (373.33,163.67) node   [align=left] {dopo};
 
