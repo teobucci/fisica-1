@@ -854,7 +854,7 @@ Su di esso viene lanciato un oggetto di massa $m$ con velocità $v_o$, inclinata
 
 \section{I teoremi di K\"onig}
 
-Si termina lo studio della dinamica dei sistemi di punti smaterializzati con l'introduzione di due teoremi molto importanti: essi prendono il nome di teoremi di K\"onig. Le grandezze caratteristiche di un sistema di punti materiali che finora sono state definite sono le seguenti:
+Si termina lo studio della dinamica dei sistemi di punti materiali con l'introduzione di due teoremi molto importanti: essi prendono il nome di teoremi di K\"onig. Le grandezze caratteristiche di un sistema di punti materiali che finora sono state definite sono le seguenti:
 
 \begin{itemize}
 	\item $\vec{p}_\text{tot}$, quantità di moto complessiva. Si tratta della somma della quantità di moto di ogni singolo punto materiale e fornisce un'informazione su come sta traslando il sistema nel suo complesso.
@@ -874,7 +874,7 @@ Si può anche definire il \textbf{momento angolare del centro di massa} come:
 	\boxed{\vec{L}_\text{CM}^{(o)} = \vec{M}_\text{CM}^{(o)} \times M_{tot} \, \vec{v}_\text{CM}}
 \]
 
-Ci si potrebbe chiedere se è possibile descrivere il sistema di punti semplicemente in termini di centro di massa. Per il primo teorema del centro di massa, si sa che la quantità di moto totale del sistema è uguale a quella del solo CM. Si può dire la stessa cosa per l'energia cinetica e il momento angolare? I due teoremi di K\"onig rispondono proprio a questa domanda. Il momento angolare del centro di massa dà informazioni sul fatto che tale punto CM possiede un certo momento angolare, quindi che in qualche maniera sta ruotando attorno al polo $O$. Se il momento angolare del centro di massa è nullo tuttavia non si può affermare che i vari punti del sistema non abbiano alcun momento angolare rispetto a tale polo. Esso può ruotare mentre il centro di massa non ha momento angolare, ad esempio perché sta traslando rispetto al polo o perché il sistema sta ruotando attorno ad esso. La velocità del CM sarà nulla, ma il sistema possiederà sicuramente una certa energia cinetica perché le sue parti ruotano. È evidente che non ha senso immaginare di descrivere il sistema di punti in termini del solo centro di massa. I teoremi di K\"onig daranno una descrizione di queste due quantità in termini di centro di massa e di una quantità aggiuntiva.
+Ci si potrebbe chiedere se è possibile descrivere il sistema di punti semplicemente in termini di centro di massa. Per il primo teorema del centro di massa, si sa che la quantità di moto totale del sistema è uguale a quella del solo CM. Si può dire la stessa cosa per l'energia cinetica e il momento angolare? I due teoremi di K\"onig rispondono proprio a questa domanda. Il momento angolare del centro di massa dà informazioni sul fatto che tale punto CM possiede un certo momento angolare, quindi che in qualche maniera sta ruotando attorno al polo $O$. Se il momento angolare del centro di massa è nullo tuttavia non si può affermare che i vari punti del sistema non abbiano alcun momento angolare rispetto a tale polo. Il sistema può ruotare mentre il centro di massa non ha momento angolare, ad esempio perché i corpi stanno ruotando attorno al polo. In tal caso la velocità del CM sarà nulla, ma il sistema possiederà sicuramente una certa energia cinetica perché le sue parti ruotano. È evidente che non ha senso immaginare di descrivere il sistema di punti in termini del solo centro di massa. I teoremi di K\"onig daranno una descrizione di queste due quantità in termini di centro di massa e di una quantità aggiuntiva.
 
 \paragraph{Primo teorema di K\"onig} Si supponga di avere il sistema di punti materiali e un punto fisso $O$.
 
@@ -1059,13 +1059,13 @@ Si comincia andando a considerare la definizione di momento angolare totale del 
 	\end{tikzpicture}
 \end{figure}
 \FloatBarrier
-A partire da questa definizione si va a sostituire le relazioni trovate sopra:
+A partire da questa definizione si va a sostituire usando le relazioni trovate sopra:
 
 \begin{equation*}
 	\begin{aligned}
 		\vec{L}_{tot}^{(o)} &= \sum_i \vec{r}_i\times m_i\vec{v}_i \\
 		&= \sum_i (\vec{r'}_i + \vec{r}_\text{CM}) \times m_i (\vec{v'}_i + \vec{v}_\text{CM}) \\
-		&= \sum_i m_i\cdot \vec{r'}_i \times \vec{v'}_i + \sum_i m_i \, \vec{r'}_i \times \vec{v}_\text{CM} \\
+		&= \sum_i m_i \vec{r'}_i \times \vec{v'}_i + \sum_i m_i \, \vec{r'}_i \times \vec{v}_\text{CM} \\
 		&\quad + \sum_i m_i\, \vec{r}_\text{CM}\times \vec{v'}_i + \sum_i m_i \, \vec{r}_\text{CM}\times \vec{v}_\text{CM}
 	\end{aligned}
 \end{equation*}
@@ -1075,7 +1075,7 @@ A partire da questa definizione si va a sostituire le relazioni trovate sopra:
 	\item Nel secondo termine si nota che dentro la sommatoria c'è un componente che non dipende dal pedice e che quindi si può portare fuori da essa ($\vec{v}_\text{CM}$). $m_i$ è uno scalare: $(\sum_i m_i\vec{r'}_i)\times \vec{v}_\text{CM}$. Il termine tra parentesi è pari a $\vec{r'}_\text{CM} \, M_\text{tot}$, in cui figura la posizione del centro di massa nel sistema di riferimento del centro di massa. Essendo il punto individuato da $\vec{r}_\text{CM}$ coincidente con l'origine di tale sistema di riferimento, si deduce che la sommatoria vale $0$.
 	\item Riguardo al terzo termine, si può notare che il vettore posizione del centro di massa non dipende dal pedice $i$ e può essere quindi portato fuori dalla sommatoria. Rimane un termine che contiene la sommatoria:
 	\[
-		\sum_i (\vec{v'}_i\,m_i ) \quad \vec{v}_{cm} = \sum_i \frac{m_i\vec{v}_i  }{M_{tot} } \quad \vec{v'}_{cm} = \sum_i \frac{m_i\vec{v}_i}{M_{tot} } = 0
+		\sum_i (\vec{v'}_i\,m_i ).\quad \quad \vec{v}_{cm} = \sum_i \frac{m_i\vec{v}_i  }{M_{tot} } \quad \vec{v'}_{cm} = \sum_i \frac{m_i\vec{v'}_i}{M_{tot} } = 0
 	\]
 	Per motivi analoghi, si deduce che anche questo termine è nullo.
 	\item Per quanto concerne l'ultimo termine, si può portare fuori dalla sommatoria tutto tranne la massa $i$-esima. Si ha semplicemente la somma di tante masse, che fa la massa totale del sistema. Il termine che si ottiene è il momento angolare del centro di massa rispetto al polo $O$.
@@ -1115,7 +1115,7 @@ Si va a riscrivere la velocità $i$-esima nella somma vettoriale della velocità
 
 Si noti che vale la relazione $\vec{v}_i \cdot \vec{v}_i = v_i^2$, molto utile per introdurre in una notazione scalare una relazione vettoriale. Si può quindi affermare che:
 
-\[ (\vec{v}_\text{CM}+\vec{v'})^2= (\vec{v}_\text{CM}+\vec{v'}) \cdot (\vec{v}_\text{CM}+\vec{v'}) \]
+\[ |\vec{v}_\text{CM}+\vec{v'}|^2= (\vec{v}_\text{CM}+\vec{v'}) \cdot (\vec{v}_\text{CM}+\vec{v'}) \]
 
 Dovranno nascere quattro contributi:
 
