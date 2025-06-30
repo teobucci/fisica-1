@@ -355,7 +355,7 @@ Si impone poi che il corpo non ruoti: rispetto ad un certo polo i momenti delle 
 	M^{(o)} = R_n x = Mgx =0 \implies x=0
 \]
 
-La forza peso rispetto al polo non genera momento perché il raggio vettore è diretto parallelamente ad essa e si ha solo un effetto di compressione. Se si immagina di congiungere il punto di applicazione della forza con il polo tramite un asta rigida e l'asta rigida con la forza che sta agendo, si ottiene un effetto di rotazione. Si ha che la reazione normale genererà un momento concorde all'asse $z$ di intensità pari a $R_n\,\cdot x$.
+La forza peso rispetto al polo non genera momento perché il raggio vettore è diretto parallelamente ad essa e si ha solo un effetto di compressione. Se si immagina di congiungere il punto di applicazione della forza con il polo tramite un'asta rigida e l'asta rigida con la forza che sta agendo, si ottiene un effetto di rotazione. Si ha che la reazione normale genererà un momento concorde all'asse $z$ di intensità pari a $R_n\,\cdot x$.
 Perché esso sia zero, bisogna necessariamente avere $x=0$. Se oltre al peso dell'oggetto si applica su di esso una forza che lo schiaccia verso il basso ma in una parte di destra, la porzione in questa zona del piano d'appoggio deve reagire con una reazione normale più intesa tale per cui, in presenza di $F_o$ e della forza peso, la risultante della reazione normale si sposti verso destra per permettere al corpo di rimanere in equilibrio.
 
 \section{Statica del corpo rigido}
@@ -624,7 +624,7 @@ in caso di traslazione l'energia cinetica del corpo rigido è uguale all'energia
 	F_o - \mu_d R_n = Ma_{cm} \implies \frac{F}{M} - \mu_d g = a_{cm}
 \end{gather*}
 
-SI sceglie come polo $O$ il punto sulla verticale passante per il centro di massa, sul piano d'appoggio. Le uniche due forze che generano momento saranno $\vec{F}_o$ e $\vec{R}_n$.
+Si sceglie come polo $O$ il punto sulla verticale passante per il centro di massa, sul piano d'appoggio. Le uniche due forze che generano momento saranno $\vec{F}_o$ e $\vec{R}_n$.
 
 \subsection{Rotazione del corpo rigido}
 
@@ -793,7 +793,7 @@ Si osservi come cambiano le direzioni dei momenti. La velocità della massa $m_j
 	\[
 		\vec{L}_z = \sum_i R_i m_i v_i \vec{u}_z
 	\]
-	\item La velocità scalare che possiede ogni punto materiale è legata alla velocità angolare, si può sostituire a $v_i$, $\omega R_i$
+	\item La velocità scalare che possiede ogni punto materiale è legata alla velocità angolare, si può sostituire $v_i$ con $\omega R_i$
 	\[
 		\vec{L}_z = \sum_i \left(R_i m_i\omega R_i \right) \vec{u}_z
 	\]
@@ -931,15 +931,15 @@ Se $\vec{L}_\perp$ è diverso da zero, si può dimostrare che fondamentalmente �
 	\end{tikzpicture}
 \end{figure}
 \FloatBarrier
-In generale, il momento angolare complessivo del corpo, non è costante, ma ruota, si muove durante il moto. L'informazione data dal momento angolare totale non è utile per studiare come varia nel tempo la velocità angolare ma lo è solo per capire l'effetto delle forze di vincolo che permettono al corpo di ruotare rimanendo vincolato all'asse.
+In generale, il momento angolare complessivo del corpo non è costante, ma ruota, si muove durante il moto. L'informazione data dal momento angolare totale non è utile per studiare come varia nel tempo la velocità angolare ma lo è solo per capire l'effetto delle forze di vincolo che permettono al corpo di ruotare rimanendo vincolato all'asse.
 
-Concentrandosi sul momento angolare assiale in particolare, a questo punto bisogna collegare questa proprietà cinematica del corpo all'effetto dinamico delle forze, con la seconda equazione cardinale della dinamica. Si considererà soltanto i momenti delle forze assiali, cioè quelle che danno luogo a un momento parallelo all'asse $z$, tali per cui vale la seconda equazione cardinale della dinamica. Si deriva di tale quantità.
+Concentrandosi sul momento angolare assiale in particolare, a questo punto bisogna collegare questa proprietà cinematica del corpo all'effetto dinamico delle forze, con la seconda equazione cardinale della dinamica. Si considereranno soltanto i momenti delle forze assiali, cioè quelle che danno luogo a un momento parallelo all'asse $z$, tali per cui vale la seconda equazione cardinale della dinamica. Si deriva di tale quantità.
 
 \[
 	\vec{M}^{(o)}_z = \frac{d\vec{L}_z }{dt} = \frac{d(I_z\vec{\omega}) }{dt} = I_z \vec{\alpha}
 \]
 
-Derivare è semplice perché $I_z$ non varia mentre il corpo si muove, perciò si può portarlo fuori dalla derivata. Rimane la derivata del vettore velocità angolare nel tempo che è pari al vettore accelerazione angolare. Questa allora diventa la relazione della dinamica. Si può quindi calcolare i momenti delle forze diretti lungo l'asse $z$ e a questo punto si sarà in grado di ricavare qual è l'accelerazione angolare del corpo. Fondamentalmente è l'equivalente di utilizzare la seconda legge della dinamica per un punto materiale.
+Derivare è semplice perché $I_z$ non varia mentre il corpo si muove, perciò si può portarlo fuori dalla derivata. Rimane la derivata del vettore velocità angolare nel tempo, che è pari al vettore accelerazione angolare. Questa allora diventa la relazione della dinamica. Si può quindi calcolare i momenti delle forze diretti lungo l'asse $z$ e a questo punto si sarà in grado di ricavare qual è l'accelerazione angolare del corpo. Fondamentalmente è l'equivalente di utilizzare la seconda legge della dinamica per un punto materiale.
 
 \[
 	\boxed{\vec{M}_z = I_z\vec{\alpha}} \qquad \text{Legge fondamentale della dinamica}
@@ -1247,7 +1247,7 @@ Se la stessa asta la si fa ruotare intorno a un asse $z$ passante per l'estremo 
 	\end{tikzpicture}
 \end{figure}
 \FloatBarrier
-La macchina di Atwood è semplicemente una carrucola: essa è costituita da due oggetti di massa $m_1$ e $m_2$ connessi da un filo inestensibile posto sopra una carrucola. Essa è pesante, ha una sua inerzia e per essere messa in rotazione richiede una certa forza. La carrucola è un disco di massa $M$ e raggio $R$ che viene incerniata rispetto al suo centro e può ruotare intorno ad esso. Questo vuole dire che allora essa potrà ruotare intorno all'asse $z$ ortogonale al piano del foglio passante per il centro della carrucola. Essa da ferma si mette ad accelerare in verso orario. $m_1$ sale e $m_2$ scende. La fune è di massa trascurabile e quindi l'accelerazione per tutti i punti, anche quella dei due corpi, è la stessa. Il corpo di massa $m_1$ vorrebbe cadere verso il basso a causa della forza peso ma è sostenuto dalla tensione della fune che lo porta verso l'altro.
+La macchina di Atwood è semplicemente una carrucola: essa è costituita da due oggetti di massa $m_1$ e $m_2$ connessi da un filo inestensibile posto sopra una carrucola. Essa è pesante, ha una sua inerzia e per essere messa in rotazione richiede una certa forza. La carrucola è un disco di massa $M$ e raggio $R$ che viene vincolata rispetto al suo centro e può ruotare intorno ad esso. Questo vuole dire che allora essa potrà ruotare intorno all'asse $z$ ortogonale al piano del foglio passante per il centro della carrucola. Essa da ferma si mette ad accelerare in verso orario. $m_1$ sale e $m_2$ scende. La fune è di massa trascurabile e quindi l'accelerazione per tutti i punti, anche quella dei due corpi, è la stessa. Il corpo di massa $m_1$ vorrebbe cadere verso il basso a causa della forza peso ma è sostenuto dalla tensione della fune che lo porta verso l'alto.
 
 \[
 	T_1 - m_1 g = m_1 a
@@ -1571,7 +1571,7 @@ Il primo termine è l'energia cinetica di un corpo che sta ruotando intorno all'
 Dunque:
 
 \[
-	E_K = \underbrace{\frac{1}{2} \omega^2 I_z'}_{E_K\text{ rotazione }cm  } + \underbrace{\frac{1}{2} Mv_{cm}^2}_{E_K\text{ traslazione } cm }
+	E_K = \underbrace{\frac{1}{2} \omega^2 I_z'}_{E_K\text{ rotazione attorno al }cm  } + \underbrace{\frac{1}{2} Mv_{cm}^2}_{E_K\text{ traslazione } cm }
 \]
 
 Questi due contributi sono quelli che sono nati quando è stato enunciato e dimostrato il teorema di K\"onig.
@@ -1743,7 +1743,7 @@ Il moto di rototraslazione è quello caratteristico di un corpo che ruota e inta
 	\end{tikzpicture}
 \end{figure}
 \FloatBarrier
-I vari punti sulla circonferenza via via nel movimento andranno a contatto con il suolo. Quello che succede è che il punto del corpo che era a contatto con il suolo, $C$, che ovviamente cambierà istante per istante, perché non strisci deve avere istantaneamente velocità nulla. Se il corpo rotola senza strisciare, le varie parti del corpo avranno una velocità, ma $C$ istantaneamente si ferma. Si noti che il corpo non sta ruotando attorno all'asse passante per il centro di massa ma attorno all'asse $z$ passante per il punto di contatto, che via via via cambia durante il moto. I vari punti del corpo, apparte il centro di massa, che si sposta parallelamente al piano di appoggio, seguono traiettorie più complicate di quelle viste finora.
+I vari punti sulla circonferenza via via nel movimento andranno a contatto con il suolo. Quello che succede è che il punto del corpo che era a contatto con il suolo, $C$, che ovviamente cambierà istante per istante, perché non strisci deve avere istantaneamente velocità nulla. Se il corpo rotola senza strisciare, le varie parti del corpo avranno una velocità, ma $C$ istantaneamente si ferma. Si noti che il corpo non sta ruotando attorno all'asse passante per il centro di massa ma attorno all'asse $z$ passante per il punto di contatto, che via via cambia durante il moto. I vari punti del corpo, a parte il centro di massa, che si sposta parallelamente al piano di appoggio, seguono traiettorie più complicate di quelle viste finora.
 
 \begin{figure}[htpb]
 	\centering
@@ -1800,7 +1800,7 @@ I vari punti sulla circonferenza via via nel movimento andranno a contatto con i
 	\end{tikzpicture}
 \end{figure}
 \FloatBarrier
-In un moto di rototraslazione, la velocità di un generico punto del corpo si può sempre vedere come la velocità del centro di massa, più la rotazione del punto intorno al centro di massa:
+In un moto di rototraslazione, la velocità di un generico punto del corpo si può sempre vedere come la velocità del centro di massa, più la velocità dovuta alla rotazione del punto intorno al centro di massa:
 
 \[
 	\vec{v} (P) = \vec{v}_{cm} + \vec{\omega}\times \vec{r}_{cm}(P)
@@ -1811,7 +1811,7 @@ Si sfrutta questa relazione per capire il legame tra la velocità del punto di c
 \[
 	\vec{v} (C) = \vec{v}_{cm} + \vec{\omega}\times \vec{r}_{cm}(C)
 \]
-$\vec{\omega}\times \vec{r}_{cm}(C)$ è un un vettore parallelo al piano d'appoggio diretto a sinistra (il senso è orario).
+$\vec{\omega}\times \vec{r}_{cm}(C)$ è un vettore parallelo al piano d'appoggio diretto a sinistra (il senso è orario).
 
 \[
 	\vec{\omega} \times \vec{r}(C) = -\omega R \vec{u}_x
@@ -1823,7 +1823,7 @@ La velocità di $C$ in un moto di rotolamento senza strisciamento vale zero. Imp
 	\boxed{v_{cm} = \omega R}
 \]
 
-Se si pensava di avere due incognite in un moto di moto traslazione, in realtà questa relazione fanno avere una sola incognita,  basta trovare $\omega$ e poi la velocità con cui si muove il centro di massa. Nel moto di puro rotolamento infatti, la velocità di rotazione e quella di traslazione non sono indipendenti.
+Se si pensava di avere due incognite in un moto di rototraslazione, in realtà questa relazione fa avere una sola incognita,  basta trovare $\omega$ e si ricava anche la velocità con cui si muove il centro di massa. Nel moto di puro rotolamento infatti, la velocità di rotazione e quella di traslazione non sono indipendenti.
 Si capisce perché il moto può essere visto come il moto di rotazione attorno al punto di contatto. I punti che devono compiere spazio maggiore sono quelli sul perimetro, il centro di massa si muove meno, il punto di contatto invece non si muove. Il modo più conveniente è quello di vederlo come un moto di rotazione attorno al punto di contatto, istantaneamente fermo.
 
 \paragraph{Esempio} Per fare in modo che le ruote di un'automobile quando ruotano non slittino, è necessario che ci sia un piano d'appoggio con sufficiente attrito da bloccare il punto di contatto, che deve essere istantaneamente fermo. Si tratterà di forza di attrito statico, e sarà diretta in direzione tangente al moto, facendo ruotare il corpo. Ad esempio, se si applica una forza $\vec{F}_o$ al centro del disco di intensità costante e tangente al piano, l'oggetto non riesce a slittare ma grazie all'attrito può rotolare. Potrebbe anche succedere che, invece che cercare di far muovere l'oggetto tirandolo, gli si applica un motore di rotazione, una coppia motrice. Si tratta di una coppia di forze uguali e opposte che non ha l'effetto di traslare ma di mettere in rotazione. In questo caso l'oggetto tenderà a ruotare indietro e allora la forza di attrito statico risulterà diretto in avanti. Le forze che agiscono sul corpo sono quelle
