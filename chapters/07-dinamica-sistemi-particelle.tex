@@ -174,7 +174,7 @@ Questo risultato prende il nome di \textbf{primo teorema del centro di massa}. I
 
 L'accelerazione del centro di massa è la media pesata delle varie accelerazioni. Si vede quindi che il suo moto è causato dalle forze esterne.  Questo risultato prende il nome di \textbf{secondo teorema del centro di massa} e, dal punto di vista delle informazioni che fornisce, è del tutto equivalente alla prima equazione cardinale della dinamica. Il suo vantaggio è che fa vedere il problema dello studio del sistema di punti materiali in maniera molto semplice.
 In aggiunta esso può diventare un principio di conservazione quando sul sistema non agiscono forze esterne. In questo caso il centro di massa si muove di moto rettilineo uniforme o, se era inizialmente fermo, rimane in quiete.
-Si è trasformato il complesso problema dello studio del moto di un sistema di punti materiali allo studio del moto di un singolo punto materiale che è il centro di massa.
+Si è ridotto il complesso problema dello studio del moto di un sistema di punti materiali allo studio del moto di un singolo punto materiale che è il centro di massa.
 
 \paragraph{Esempio} Se il sistema è isolato, le equazioni ottenute diventano:
 
@@ -333,7 +333,7 @@ C'è un termine comune a tutti i prodotti che non dipende dal pedice $i$, $\vec{
 
 \begin{equation}
 	\label{ciao}
-	\sum_{i=1}^n(\vec{v}_0\times m_i\vec{v}_i)=\vec{v}_0 \times \sum_{i=1}^nm_i\vec{v}_i=\vec{v}_0\times (M_\text{tot}\vec{v}_\text{CM})
+	\sum_{i=1}^n(\vec{v}_0\times m_i\vec{v}_i)=\vec{v}_0 \times \sum_{i=1}^nm_i\vec{v}_i=\vec{v}_0\times (M_\text{tot}\vec{v}_\text{CM})=\vec v_0\times \vec p_\text{tot}
 \end{equation}
 
 Ricordando che $\frac{\sum_{i=1}^nd\vec{L}_i^{(o)}}{dt}=\frac{d\sum_{i=1}^n \vec{L}_i^{(o)}}{dt}$, si va a definire una nuova grandezza che è la somma di tutti i momenti angolari: $\vec{L}_\text{tot}^{(o)}$.
@@ -394,7 +394,11 @@ Il termine $\sum_{i=1}^n \vec{M}^\text{ext}$ lo si chiama \textbf{risultante dei
 	\end{tikzpicture}
 \end{figure}
 \FloatBarrier
-L'altra genera un momento in verso orario. Le due forze danno luogo a momenti uguali in modulo e opposti in verso. Per ogni coppia di forze, i momenti delle forze interne sono sempre uguali a zero.
+L'altra genera un momento in verso orario. Le due forze danno luogo a momenti uguali in modulo e opposti in verso. Per ogni coppia di forze, i momenti delle forze interne sono sempre uguali a zero. Abbiamo quindi ottenuto che
+
+\[
+\vec M_\text{tot}^{(o)}=\vec M_\text{tot}^{\text{ext},(o)}=\frac{d\vec L_\text{tot}^{(o)}}{dt}+\vec v_0 \times \vec p_\text{tot}
+\]
 
 Il termine ~\eqref{ciao} è zero se come polo si sceglie il centro di massa, oppure se c'è un polo che si muove con velocità parallela al centro di massa o se esso è fisso nel sistema di riferimento inerziale. Questa equazione
 
@@ -606,7 +610,7 @@ Si può definire l'\textbf{energia meccanica totale} come somma dell'energia mec
 	\end{tikzpicture}
 \end{figure}
 \FloatBarrier
-Se l'oggetto parte da fermo, quello che accade è che tenderà a scivolare a causa dell'effetto della forza peso ed è naturale pensare che se non c'è attrito, esso, partendo da faremo, trasformerà la sua energia potenziale in energia cinetica che poi, ripartendo verso l'alto, si ritrasformerà in energia potenziale. L'oggetto oscillerà sul cuneo. A causa del fatto che questo si sta muovendo complessivamente verso destra, ci si aspetta che il cuneo dovrà partire verso sinistra per la conservazione della quantità di moto. Dal punto di vista delle forze esterne, agiscono il peso e la reazione normale al piano d'appoggio, tutte in direzione verticale.
+Se l'oggetto parte da fermo, quello che accade è che tenderà a scivolare a causa dell'effetto della forza peso ed è naturale pensare che se non c'è attrito, esso, partendo da fermo, trasformerà la sua energia potenziale in energia cinetica che poi, ripartendo verso l'alto, si ritrasformerà in energia potenziale. L'oggetto oscillerà sul cuneo. A causa del fatto che questo si sta muovendo complessivamente verso destra, ci si aspetta che il cuneo dovrà partire verso sinistra per la conservazione della quantità di moto. Dal punto di vista delle forze esterne, agiscono il peso e la reazione normale al piano d'appoggio, tutte in direzione verticale.
 
 Le forze totali esterne sono $0$ in direzione $x$ e questo comporta che la quantità di moto totale del sistema valutata in tale direzione dovrà essere costante. Il sistema inizialmente aveva quantità di moto iniziale zero, quindi essa si deve continuare a mantenere tale: l'ascissa del centro di massa non deve variare nel tempo. Quando la massa si sposta verso destra il cuneo, per compensare, si sposta a sinistra. Se per assurdo la massa si spostasse e arrivasse dall'altra parte senza che il cuneo si muovesse, il centro di massa si sposterebbe in basso. Da un punto di vista fisico, ciò che fa spostare il cuneo è l'effetto di una forza interna. La reazione normale sull'oggetto è generata dal cuneo; allora la massa $m$ genererà su di esso una forza uguale e contraria.
 
@@ -675,9 +679,9 @@ Infine è possibile attuare delle considerazione energetiche. Ci si chiede se e 
 
 Quindi se ci sono forze interne dissipative queste vanno a variare l'energia cinetica totale del sistema.
 
-\subsection{Urti elastici e anaelastici}
+\subsection{Urti elastici e anelastici}
 
-Dal punto di vista energetico, si possono distinguere gli urti in due grandi tipologie: urti \textbf{ideali} o \textbf{elastici}, in cui le forze interne sono tutte conservative, e quindi non si ha effetto di dissipazione per causa loro, e urti \textbf{anaelastici}.
+Dal punto di vista energetico, si possono distinguere gli urti in due grandi tipologie: urti \textbf{ideali} o \textbf{elastici}, in cui le forze interne sono tutte conservative, e quindi non si ha effetto di dissipazione per causa loro, e urti \textbf{anelastici}.
 
 \paragraph{Urti elastici} Si definisce come urto elastico un urto durante il quale si conserva anche l'energia cinetica del sistema. Questo comporta che le forze interne, che si manifestano durante l'urto, siano conservative. I due corpi reali che si urtano subiscono, durante l'urto, delle deformazioni elastiche, riprendendo la configurazione iniziale subito dopo di esso.
 Il termine:
@@ -695,9 +699,9 @@ Nello studio di un sistema elastico si possono utilizzare quindi le equazioni:
 
 Si pensi all'urto tra palle da biliardo, le forze che si scambiano durante l'urto non variano l'energia del sistema e si osserva trasferimento di energia cinetica da un corpo all'altro.
 
-\paragraph{Urti anaelastici} Si tratta di urti che avvengono in presenza di forze interne non conservative con conseguente variazione di energia cinetica durante il fenomeno. Questa seconda classe rappresenta la vera categoria degli urti, la prima è principalmente un'idealizzazione. Se le forze interne sono dissipative l'energia cinetica diminuirà, anche se ci sono casi in cui le forze interne possono far aumentare l'energia del sistema.
+\paragraph{Urti anelastici} Si tratta di urti che avvengono in presenza di forze interne non conservative con conseguente variazione di energia cinetica durante il fenomeno. Questa seconda classe rappresenta la vera categoria degli urti, la prima è principalmente un'idealizzazione. Se le forze interne sono dissipative l'energia cinetica diminuirà, anche se ci sono casi in cui le forze interne possono far aumentare l'energia del sistema.
 
-\paragraph{Urto completamente anaelastico} Tra gli urti anaelastici, si trova una sottoclasse di fenomeni di urto che prende il nome di \textbf{urti completamente anaelastici}: sono quei fenomeni di urto in cui i corpi che si sono urtati dopo l'evento rimangono insieme, formando un unico corpo puntiforme di massa $m_1+m_2$ che si muove con una certa velocità finale. Per far unire i corpi insieme devono aver agito forze interne che hanno dissipato l'energia cinetica. I due corpi, che si assimilano a punti materiali, durante l'urto si deformano in modo permanente e restano compenetrati. Il lavoro compiuto, a spese dell'energia cinetica iniziale, per fare avvenire la deformazione, non viene più recuperato, cosa che equivale ad affermare che le forze interne sviluppate nell'atto non sono conservative. Inoltre, dopo l'urto completamente anaelastico, non c'è più moto rispetto al centro di massa.
+\paragraph{Urto completamente anelastico} Tra gli urti anelastici, si trova una sottoclasse di fenomeni di urto che prende il nome di \textbf{urti completamente anelastici}: sono quei fenomeni di urto in cui i corpi che si sono urtati dopo l'evento rimangono insieme, formando un unico corpo puntiforme di massa $m_1+m_2$ che si muove con una certa velocità finale. Per far unire i corpi insieme devono aver agito forze interne che hanno dissipato l'energia cinetica. I due corpi, che si assimilano a punti materiali, durante l'urto si deformano in modo permanente e restano compenetrati. Il lavoro compiuto, a spese dell'energia cinetica iniziale, per fare avvenire la deformazione, non viene più recuperato, cosa che equivale ad affermare che le forze interne sviluppate nell'atto non sono conservative. Inoltre, dopo l'urto completamente anelastico, non c'è più moto rispetto al centro di massa.
 
 \subsection{Urti centrali e non centrali}
 
@@ -798,7 +802,7 @@ Un caso interessante si ha quando una massa va a urtare un'altra massa inizialme
 	v_{1,\text{fin}} \begin{cases}  >0 & \text{se $m_1>m_2$} \\ <0 & \text{se $m_1<m_2$} \\ =0 &\text{se $m_1=m_2$} \end{cases}
 \]
 
-Nel caso di \textit{urti centrali anaelastici}, si può imporre la conservazione della quantità di moto. Essendo l'urto anaelastico, l'energia cinetica del sistema non è costante e varia nel tempo. Come nel caso precedente, si hanno due incognite ma una sola equazione scalare. Quindi non è sufficiente usare la sola conservazione della quantità di moto. Si deve avere un'informazione ad esempio su come è variata l'energia cinetica totale del sistema. Diversa è la situazione se l'urto è completamente anaelastico. Si impone infatti di nuovo la conservazione della quantità di moto, ma se l'urto è anaelastico completo i corpi si muovono insieme con la stessa velocità, quindi si ha una sola incognita.
+Nel caso di \textit{urti centrali anelastici}, si può imporre la conservazione della quantità di moto. Essendo l'urto anelastico, l'energia cinetica del sistema non è costante e varia nel tempo. Come nel caso precedente, si hanno due incognite ma una sola equazione scalare. Quindi non è sufficiente usare la sola conservazione della quantità di moto. Si deve avere un'informazione ad esempio su come è variata l'energia cinetica totale del sistema. Diversa è la situazione se l'urto è completamente anelastico. Si impone infatti di nuovo la conservazione della quantità di moto, ma se l'urto è anelastico completo i corpi si muovono insieme con la stessa velocità, quindi si ha una sola incognita.
 
 Si rimuove ora l'ipotesi che le forze esterne non siano impulsive. In tal caso il loro effetto non è più trascurabile durante l'urto. Si immagini di avere un blocco di massa $M$ su un piano d'appoggio orizzontale.
 
@@ -850,7 +854,7 @@ Su di esso viene lanciato un oggetto di massa $m$ con velocità $v_o$, inclinata
 
 \section{I teoremi di K\"onig}
 
-Si termina lo studio della dinamica dei sistemi di punti smaterializzati con l'introduzione di due teoremi molto importanti: essi prendono il nome di teoremi di K\"onig. Le grandezze caratteristiche di un sistema di punti materiali che finora sono state definite sono le seguenti:
+Si termina lo studio della dinamica dei sistemi di punti materiali con l'introduzione di due teoremi molto importanti: essi prendono il nome di teoremi di K\"onig. Le grandezze caratteristiche di un sistema di punti materiali che finora sono state definite sono le seguenti:
 
 \begin{itemize}
 	\item $\vec{p}_\text{tot}$, quantità di moto complessiva. Si tratta della somma della quantità di moto di ogni singolo punto materiale e fornisce un'informazione su come sta traslando il sistema nel suo complesso.
@@ -870,7 +874,7 @@ Si può anche definire il \textbf{momento angolare del centro di massa} come:
 	\boxed{\vec{L}_\text{CM}^{(o)} = \vec{M}_\text{CM}^{(o)} \times M_{tot} \, \vec{v}_\text{CM}}
 \]
 
-Ci si potrebbe chiedere se è possibile descrivere il sistema di punti semplicemente in termini di centro di massa. Per il primo teorema del centro di massa, si sa che la quantità di moto totale del sistema è uguale a quella del solo CM. Si può dire la stessa cosa per l'energia cinetica e il momento angolare? I due teoremi di K\"onig rispondono proprio a questa domanda. Il momento angolare del centro di massa dà informazioni sul fatto che tale punto CM possiede un certo momento angolare, quindi che in qualche maniera sta ruotando attorno al polo $O$. Se il momento angolare del centro di massa è nullo tuttavia non si può affermare che i vari punti del sistema non abbiano alcun momento angolare rispetto a tale polo. Esso può ruotare mentre il centro di massa non ha momento angolare, ad esempio perché sta traslando rispetto al polo o perché il sistema sta ruotando attorno ad esso. La velocità del CM sarà nulla, ma il sistema possiederà sicuramente una certa energia cinetica perché le sue parti ruotano. È evidente che non ha senso immaginare di descrivere il sistema di punti in termini del solo centro di massa. I teoremi di K\"onig daranno una descrizione di queste due quantità in termini di centro di massa e di una quantità aggiuntiva.
+Ci si potrebbe chiedere se è possibile descrivere il sistema di punti semplicemente in termini di centro di massa. Per il primo teorema del centro di massa, si sa che la quantità di moto totale del sistema è uguale a quella del solo CM. Si può dire la stessa cosa per l'energia cinetica e il momento angolare? I due teoremi di K\"onig rispondono proprio a questa domanda. Il momento angolare del centro di massa dà informazioni sul fatto che tale punto CM possiede un certo momento angolare, quindi che in qualche maniera sta ruotando attorno al polo $O$. Se il momento angolare del centro di massa è nullo tuttavia non si può affermare che i vari punti del sistema non abbiano alcun momento angolare rispetto a tale polo. Il sistema può ruotare mentre il centro di massa non ha momento angolare, ad esempio perché i corpi stanno ruotando attorno al polo. In tal caso la velocità del CM sarà nulla, ma il sistema possiederà sicuramente una certa energia cinetica perché le sue parti ruotano. È evidente che non ha senso immaginare di descrivere il sistema di punti in termini del solo centro di massa. I teoremi di K\"onig daranno una descrizione di queste due quantità in termini di centro di massa e di una quantità aggiuntiva.
 
 \paragraph{Primo teorema di K\"onig} Si supponga di avere il sistema di punti materiali e un punto fisso $O$.
 
@@ -1055,13 +1059,13 @@ Si comincia andando a considerare la definizione di momento angolare totale del 
 	\end{tikzpicture}
 \end{figure}
 \FloatBarrier
-A partire da questa definizione si va a sostituire le relazioni trovate sopra:
+A partire da questa definizione si va a sostituire usando le relazioni trovate sopra:
 
 \begin{equation*}
 	\begin{aligned}
 		\vec{L}_{tot}^{(o)} &= \sum_i \vec{r}_i\times m_i\vec{v}_i \\
 		&= \sum_i (\vec{r'}_i + \vec{r}_\text{CM}) \times m_i (\vec{v'}_i + \vec{v}_\text{CM}) \\
-		&= \sum_i m_i\cdot \vec{r'}_i \times \vec{v'}_i + \sum_i m_i \, \vec{r'}_i \times \vec{v}_\text{CM} \\
+		&= \sum_i m_i \vec{r'}_i \times \vec{v'}_i + \sum_i m_i \, \vec{r'}_i \times \vec{v}_\text{CM} \\
 		&\quad + \sum_i m_i\, \vec{r}_\text{CM}\times \vec{v'}_i + \sum_i m_i \, \vec{r}_\text{CM}\times \vec{v}_\text{CM}
 	\end{aligned}
 \end{equation*}
@@ -1071,7 +1075,7 @@ A partire da questa definizione si va a sostituire le relazioni trovate sopra:
 	\item Nel secondo termine si nota che dentro la sommatoria c'è un componente che non dipende dal pedice e che quindi si può portare fuori da essa ($\vec{v}_\text{CM}$). $m_i$ è uno scalare: $(\sum_i m_i\vec{r'}_i)\times \vec{v}_\text{CM}$. Il termine tra parentesi è pari a $\vec{r'}_\text{CM} \, M_\text{tot}$, in cui figura la posizione del centro di massa nel sistema di riferimento del centro di massa. Essendo il punto individuato da $\vec{r}_\text{CM}$ coincidente con l'origine di tale sistema di riferimento, si deduce che la sommatoria vale $0$.
 	\item Riguardo al terzo termine, si può notare che il vettore posizione del centro di massa non dipende dal pedice $i$ e può essere quindi portato fuori dalla sommatoria. Rimane un termine che contiene la sommatoria:
 	\[
-		\sum_i (\vec{v'}_i\,m_i ) \quad \vec{v}_{cm} = \sum_i \frac{m_i\vec{v}_i  }{M_{tot} } \quad \vec{v'}_{cm} = \sum_i \frac{m_i\vec{v}_i}{M_{tot} } = 0
+		\sum_i (\vec{v'}_i\,m_i ).\quad \quad \vec{v}_{cm} = \sum_i \frac{m_i\vec{v}_i  }{M_{tot} } \quad \vec{v'}_{cm} = \sum_i \frac{m_i\vec{v'}_i}{M_{tot} } = 0
 	\]
 	Per motivi analoghi, si deduce che anche questo termine è nullo.
 	\item Per quanto concerne l'ultimo termine, si può portare fuori dalla sommatoria tutto tranne la massa $i$-esima. Si ha semplicemente la somma di tante masse, che fa la massa totale del sistema. Il termine che si ottiene è il momento angolare del centro di massa rispetto al polo $O$.
@@ -1111,7 +1115,7 @@ Si va a riscrivere la velocità $i$-esima nella somma vettoriale della velocità
 
 Si noti che vale la relazione $\vec{v}_i \cdot \vec{v}_i = v_i^2$, molto utile per introdurre in una notazione scalare una relazione vettoriale. Si può quindi affermare che:
 
-\[ (\vec{v}_\text{CM}+\vec{v'})^2= (\vec{v}_\text{CM}+\vec{v'}) \cdot (\vec{v}_\text{CM}+\vec{v'}) \]
+\[ |\vec{v}_\text{CM}+\vec{v'}|^2= (\vec{v}_\text{CM}+\vec{v'}) \cdot (\vec{v}_\text{CM}+\vec{v'}) \]
 
 Dovranno nascere quattro contributi:
 
@@ -1137,7 +1141,7 @@ Rimangono soltanto i primo e il quarto termine, che hanno un significato molto s
 Questo termine è l'energia cinetica di un punto che si muove come il centro di massa e che quindi rappresenta l'\textbf{energia cinetica del centro di massa}.
 L'ultimo termine rimasto è la somma di tante energie cinetiche dove compare per ogni massa la velocità che essa ha nel sistema di riferimento del centro di massa. Si tratta dell'energia cinetica totale del sistema nel sistema di riferimento del centro di massa.
 
-Il secondo teorema di Koenig è quindi dato da.
+Il secondo teorema di K\"onig è quindi dato da.
 
 \[
 	\boxed{E_{K,tot} = E_{K,cm} + E'_K}
